@@ -40,7 +40,7 @@ const Header = () => {
     <div className="header">
       <Navbar bg="dark" className="bg-body-dark">
         <Container>
-          <Navbar.Brand href="/">my Tunes</Navbar.Brand>
+          <Navbar.Brand href="/my-tunes/">my Tunes</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link onClick={handleChordsClick}>Chords</Nav.Link>
             <Nav.Link onClick={handleExtrasClick}>Extras</Nav.Link>
