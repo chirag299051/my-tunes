@@ -1,13 +1,214 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.navbar.bg-dark {
+  background-color: black !important;
+}
+
+.navbar-brand {
+  color: deepskyblue !important;
+  font-weight: 600;
+}
+
+a.nav-link {
+  color: aliceblue;
+  margin-left: 50px;
+  background-color: rgb(33, 37, 41);
+}
+a.nav-link:hover {
+  color: cyan;
+}
+a.nav-link:focus {
+  color: aliceblue !important;
+}
+
+.main {
+  min-height: 100vh;
+  background-color: rgb(33, 37, 41);
+  display: flex;
+}
+
+.main .wrapper {
+  margin: 70px auto 0 auto;
+  max-width: 90vw;
+  min-height: 80vh;
+}
+.modal-backdrop {
+  background-color: deepskyblue !important;
+}
+.modal-content.my-modal {
+  background-color: rgb(33, 37, 41);
+  color: aliceblue;
+  min-height: 80vh !important;
+}
+.modal-dialog {
+  max-width: 90vw !important;
+  min-height: 100vh !important;
+}
+.modal-header {
+  display: flex;
+  justify-content: center !important;
+}
+.modal-header .btn-close {
+  margin: 0px !important;
+  background-color: rgb(146, 188, 255);
+  position: relative;
+  left: 200px;
+}
+.grid {
+  display: flex;
+  justify-content: space-between;
+  height: 710px;
+  border-radius: 20px;
+}
+.playlist {
+  background-color: black;
+  width: 360px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+.item {
+  flex: none;
+  background-color: inherit;
+  padding: 10px;
+  height: 70px;
+  font-weight: 600;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.item p {
+  margin-bottom: 0;
+}
+.item img {
+  width: 25%;
+  border-radius: 10%;
+}
+.item:hover {
+  background-color: rgb(21, 24, 27);
+}
+.item.active {
+  background-color: rgb(12, 33, 54);
+}
+
+.player {
+  width: 1240px;
+  height: 710px;
+  border: 1px solid black;
+}
+
+.page {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  background-color: rgb(255, 255, 255);
+}
+.page .part {
+  width: 49%;
+}
+
+.page .part .heading {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 9fr 4fr;
+  background-color: rgb(202, 205, 218);
+}
+.page .part .heading .span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+}
+
+.song {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 9fr 4fr;
+  min-height: 48px;
+  border-bottom: 1px solid rgb(172, 172, 172);
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: black;
+  width: 60%;
+}
+
+.page .song {
+  background-color: white;
+  width: 100%;
+}
+.page .song .chords {
+  background-color: rgb(201, 208, 240);
+}
+.page .song:hover {
+  background-color: rgb(179, 194, 215);
+}
+
+.song .span {
+  display: flex;
+  align-items: center;
+}
+.song .span.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chords-wrapper {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.chords {
+  background-color: rgb(67, 76, 84);
+  border-radius: 5px;
+  margin: 0 5px;
+  padding: 0 5px;
+  width: max-content;
+}
+
+.tools {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  color: rgb(148, 155, 162);
+  font-size: 14px;
+  font-weight: 500;
+  background-color: black;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: inherit;
+}
+
+.footer a span#c {
+  color: deepskyblue;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer a:hover span#c {
+  color: red;
 }
