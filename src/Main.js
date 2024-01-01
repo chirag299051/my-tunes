@@ -33,7 +33,7 @@ const Main = () => {
           contentClassName="my-modal"
           centered
         >
-          <Modal.Header closeButton>
+          <Modal.Header className="modalHeader" closeButton>
             {song && <Song key={Math.random()} song={song}></Song>}
           </Modal.Header>
           <Modal.Body className="grid">

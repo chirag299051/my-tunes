@@ -56,10 +56,12 @@ a.nav-link:focus {
   max-width: 90vw !important;
   min-height: 100vh !important;
 }
-.modal-header {
+.modal-header.modalHeader {
   display: flex;
   justify-content: center !important;
+  border-bottom: 1px solid deepskyblue !important;
 }
+
 .modal-header .btn-close {
   margin: 0px !important;
   background-color: rgb(146, 188, 255);
@@ -274,5 +276,8 @@ a.nav-link:focus {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .modal-header .btn-close {
+    left: 10px;
   }
 }
