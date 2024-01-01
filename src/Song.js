@@ -33,15 +33,17 @@ const Song = ({ song }) => {
       <span className="span">
         <i>{title}</i>
       </span>
-      <span
-        className="span center"
-        onClick={(e) => {
-          e.stopPropagation();
-          handleLyricsClick();
-        }}
-      >
-        <FaYoutube color="deepskyblue" size={26} />
-      </span>
+      {lyrics && (
+        <span
+          className="span center"
+          onClick={(e) => {
+            e.stopPropagation();
+            handleLyricsClick();
+          }}
+        >
+          <FaYoutube color="deepskyblue" size={26} />
+        </span>
+      )}
       <span className="span center chords-wrapper">
         {Array.isArray(chords) &&
           chords.map((x) => <Chords key={Math.random()} chords={x} />)}
