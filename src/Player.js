@@ -1,14 +1,46 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef, useEffect, useState } from "react";
 import ReactPlayer from "react-player/youtube";
 import { context } from "./App";
 
 const Player = ({ url }) => {
   const { currSongId, setCurrSongId } = useContext(context);
+  const [playing, setPlaying] = useState(true);
+  const play = () => setPlaying(true);
+  const pause = () => setPlaying(false);
+
+  const playerRef = useRef(null);
+
+  useEffect(() => {
+    play();
+
+    const handleKeyPress = (event) => {
+      console.log(playerRef.current);
+      if (playerRef.current) {
+        if (event.keyCode === 37) {
+          playerRef.current.seekTo(playerRef.current.getCurrentTime() - 5);
+        } else if (event.keyCode === 39) {
+          playerRef.current.seekTo(playerRef.current.getCurrentTime() + 5);
+        } else if (event.keyCode === 32 || event.keyCode === 49) {
+          setPlaying(!playing);
+        }
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyPress);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyPress);
+    };
+  }, [playing, currSongId, playerRef]);
 
   return (
     <ReactPlayer
       autoFocus
-      playing={true}
+      ref={playerRef}
+      playing={playing}
+      // onPlay={play}
+      // onPause={pause}
+      controls={true}
       config={{
         youtube: {
           playerVars: {

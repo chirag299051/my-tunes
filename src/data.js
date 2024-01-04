@@ -145,12 +145,12 @@ export const songs1 = [
   },
   {
     id: 17,
-    title: "Haan Tu Hai - Capo 5th",
-    url: "https://www.youtube.com/watch?v=RZYqg2D0B9I",
-    lyrics: "https://www.youtube.com/watch?v=M0slFWoW-Dc",
-    chords: ["Am G F Am", "Am G Em F Am C Am"],
-    strumming: "DDU UDU",
-    img: "https://i.ytimg.com/vi/RZYqg2D0B9I/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDvpfqYWp74VDIbiLpXPCLnCUiWXw",
+    title: "Chahun Main Ya Na",
+    url: "https://www.youtube.com/watch?v=rGLPjnsJB5o",
+    lyrics: "https://www.youtube.com/watch?v=U3aoGDjDI2s",
+    chords: ["Am G F G", "C Am F G", "C Em F G C", "Am G F E"],
+    strumming: "D D UDUD DDU",
+    img: "https://i.ytimg.com/vi/rGLPjnsJB5o/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAt8ypQGl3rGONkbpdpSnbzJoBhSA",
   },
 
   {
@@ -164,21 +164,21 @@ export const songs1 = [
   },
   {
     id: 19,
-    title: "Filhaal-2",
-    url: "https://www.youtube.com/watch?v=NJHXCMtZbc0",
-    lyrics: "https://www.youtube.com/watch?v=vzlyLJqxegA",
-    chords: ["Am Dm G C"],
-    strumming: "D D UUD DU",
-    img: "https://i.ytimg.com/vi/NJHXCMtZbc0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBQJHghFQINJA7p4DMaGzhSeq84KQ",
-  },
-  {
-    id: 20,
     title: "Kabhi Toh Paas Mere Aao",
     url: "https://www.youtube.com/watch?v=vRUhpLyT1h4",
     lyrics: "https://www.youtube.com/watch?v=2c_43PKXxKk",
     chords: ["Am G F Am", "G Am F Am C", "C G F E"],
     strumming: "D D UUD DDU",
     img: "https://i.ytimg.com/vi/vRUhpLyT1h4/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBSZP5fSRyktdhk1KoufSBFYnDYRA",
+  },
+  {
+    id: 20,
+    title: "Filhaal-2",
+    url: "https://www.youtube.com/watch?v=NJHXCMtZbc0",
+    lyrics: "https://www.youtube.com/watch?v=vzlyLJqxegA",
+    chords: ["Am Dm G C"],
+    strumming: "D D UUD DU",
+    img: "https://i.ytimg.com/vi/NJHXCMtZbc0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBQJHghFQINJA7p4DMaGzhSeq84KQ",
   },
 ];
 
@@ -462,7 +462,7 @@ export const songs2 = [
 
 export const extras = [
   {
-    id: 1,
+    id: 51,
     title: "How to do singing with guitar",
     url: "https://www.youtube.com/watch?v=Vqj2gCAJIfY",
     lyrics: "",
@@ -471,7 +471,7 @@ export const extras = [
     img: "https://i.ytimg.com/vi/Vqj2gCAJIfY/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA2Y0HRnq915y33JrhQS827XbhHfQ",
   },
   {
-    id: 2,
+    id: 52,
     title: "Tum Hi Ho - Lead",
     url: "https://www.youtube.com/watch?v=s2lvF0TrF2w",
     lyrics: "",
@@ -480,7 +480,7 @@ export const extras = [
     img: "https://i.ytimg.com/vi/s2lvF0TrF2w/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDMxD8Ui8eReRos_1dPvVHG46PTmA",
   },
   {
-    id: 3,
+    id: 53,
     title: "Janam Janam - Lead",
     url: "https://www.youtube.com/watch?v=PUAk1fhcJgk&t=195s",
     lyrics: "",
@@ -489,7 +489,7 @@ export const extras = [
     img: "https://i.ytimg.com/vi/PUAk1fhcJgk/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDmqRzx02iGiwIxDFmvJ4K2NniUng",
   },
   {
-    id: 4,
+    id: 54,
     title: "Game of Thrones - Theme song",
     url: "https://www.youtube.com/watch?v=u_1fqr5OCMU&t=57s",
     lyrics: "",
@@ -498,7 +498,7 @@ export const extras = [
     img: "https://i.ytimg.com/vi/u_1fqr5OCMU/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLARv6FMNSLRDLRrkkRa6bWphmm7kQ",
   },
   {
-    id: 5,
+    id: 55,
     title: "Pirates of Carribbean - Theme",
     url: "https://www.youtube.com/watch?v=-3euwoOoenM&t=80s",
     lyrics: "",
@@ -507,16 +507,7 @@ export const extras = [
     img: "https://i.ytimg.com/vi/-3euwoOoenM/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAhUyid7G0ERoAbAUyZTT6BWE8nsg",
   },
   {
-    id: 6,
-    title: "Gulabi Ankhein - Fingerstyle",
-    url: "https://www.youtube.com/watch?v=po04jOqWr8Q",
-    lyrics: "",
-    chords: [""],
-    strumming: "",
-    img: "https://i.ytimg.com/vi/po04jOqWr8Q/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAiK_SdnNx-yj0iycQ4PYfUr41cYw",
-  },
-  {
-    id: 7,
+    id: 56,
     title: "Gratitude Guitar Solo",
     url: "https://www.youtube.com/watch?v=z6FoVylAlNA",
     lyrics: "",
@@ -525,7 +516,7 @@ export const extras = [
     img: "https://i.ytimg.com/vi/z6FoVylAlNA/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBY7RuFG7ExrA5Se3P7Va9qGKd4iA",
   },
   {
-    id: 8,
+    id: 57,
     title: "Amin Toofani - Veer Kumar",
     url: "https://www.youtube.com/watch?v=HG0BPP-aCq8",
     lyrics: "",
@@ -535,7 +526,7 @@ export const extras = [
   },
 
   {
-    id: 9,
+    id: 58,
     title: "Ya Ali",
     url: "https://www.youtube.com/watch?v=QB6lnNwVWZE",
     lyrics: "https://www.youtube.com/watch?v=s05m-PbVYic",
@@ -544,7 +535,7 @@ export const extras = [
     img: "https://i.ytimg.com/vi/QB6lnNwVWZE/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDEqAQRHxy7UwLXlWs-88COgLcO7w",
   },
   {
-    id: 10,
+    id: 59,
     title: "O O Jane Jana",
     url: "https://www.youtube.com/watch?v=kV2SK6M9VOg",
     lyrics: "https://www.youtube.com/watch?v=JtAp4GnkMbE",
@@ -553,7 +544,7 @@ export const extras = [
     img: "https://i.ytimg.com/vi/kV2SK6M9VOg/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBDyjbbERHKYRwmHYVM_jqpGKvm5Q",
   },
   {
-    id: 13,
+    id: 60,
     title: "Maan Meri Jaan",
     url: "https://www.youtube.com/watch?v=iFzpQngfWLk&t=168s",
     lyrics: "https://www.youtube.com/watch?v=3RAoczaBVP8",
@@ -562,10 +553,10 @@ export const extras = [
     img: "https://i.ytimg.com/vi/iFzpQngfWLk/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCJDnVuHJ8I4RqWTVWPZn5SzlHM8Q",
   },
   {
-    id: 12,
+    id: 61,
     title: "Inteha Ho Gayi",
-    url: "https://www.youtube.com/watch?v=1jKI_kwrrRU",
-    lyrics: "https://www.youtube.com/watch?v=8QQdtaJ4tu0",
+    url: "https://www.youtube.com/watch?v=1JbdMBNiw7I",
+    lyrics: "https://www.youtube.com/watch?v=4muKrzVo7bU",
     chords: ["Em Am D F# B Em"],
     strumming: "D DU UDU",
     img: "https://i.ytimg.com/vi/1JbdMBNiw7I/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDn4-0qedGh3r-d96vKokCuSG1mXA",

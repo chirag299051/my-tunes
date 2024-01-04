@@ -44,6 +44,7 @@ a.nav-link:focus {
   max-width: 90vw;
   min-height: 80vh;
 }
+
 .modal-backdrop {
   background-color: deepskyblue !important;
 }
@@ -51,6 +52,7 @@ a.nav-link:focus {
   background-color: rgb(33, 37, 41);
   color: aliceblue;
   min-height: 80vh !important;
+  margin-top: 100px;
 }
 .modal-dialog {
   max-width: 90vw !important;

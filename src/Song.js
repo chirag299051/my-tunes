@@ -13,14 +13,14 @@ const Song = ({ song }) => {
     setShowModal(true);
     setCurrSongId(id);
     setModalType("title");
-    setModalPage(id < 21 ? 1 : 2);
+    setModalPage(id < 21 ? 1 : id > 50 ? 3 : 2);
   };
 
   const handleLyricsClick = () => {
     setShowModal(true);
     setCurrSongId(id);
     setModalType("lyrics");
-    setModalPage(id < 21 ? 1 : 2);
+    setModalPage(id < 21 ? 1 : id > 50 ? 3 : 2);
   };
 
   return (

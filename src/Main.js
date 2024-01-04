@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import Page from "./Page";
 import Modal from "react-bootstrap/Modal";
 import { context } from "./App";
@@ -17,6 +17,11 @@ const Main = () => {
     modalPage,
   } = useContext(context);
   const { songs1, songs2, extras } = data;
+
+  useEffect(() => {
+    modalPage === 3 && setCurrSongId(51);
+  }, [modalPage]);
+
   const song =
     modalPage === 3
       ? extras.find((x) => x.id === currSongId)
@@ -34,7 +39,13 @@ const Main = () => {
           centered
         >
           <Modal.Header className="modalHeader" closeButton>
-            {song && <Song key={Math.random()} song={song}></Song>}
+            {song && (
+              <Song
+                key={Math.random()}
+                song={song}
+                modalPage={modalPage}
+              ></Song>
+            )}
           </Modal.Header>
           <Modal.Body className="grid">
             <Playlist
@@ -49,7 +60,6 @@ const Main = () => {
             </div>
           </Modal.Body>
         </Modal>
-        ;
       </div>
     </div>
   );
