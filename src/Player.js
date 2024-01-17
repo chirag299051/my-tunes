@@ -38,8 +38,6 @@ const Player = ({ url }) => {
       autoFocus
       ref={playerRef}
       playing={playing}
-      // onPlay={play}
-      // onPause={pause}
       controls={true}
       config={{
         youtube: {
