@@ -40,9 +40,21 @@ a.nav-link:focus {
 }
 
 .main .wrapper {
-  margin: 70px auto 0 auto;
+  margin: 40px auto 0 auto;
   max-width: 90vw;
   min-height: 80vh;
+}
+.wrapper .btn-shuffle {
+  color: black;
+  background: rgb(146, 188, 255);
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  outline: none;
+}
+.wrapper .btn-shuffle.on {
+  background-color: deepskyblue;
 }
 
 .modal-backdrop {

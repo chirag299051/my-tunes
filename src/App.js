@@ -8,24 +8,29 @@ import arrayShuffle from "array-shuffle";
 
 export const context = createContext();
 
+const shuffled = arrayShuffle([
+  ...songs1,
+  ...songs2,
+  ...extras.filter((x) => x.id >= 60),
+]).slice(0, 20);
+
 function App() {
   const [data, setData] = useState({ songs1, songs2, extras });
   const [showModal, setShowModal] = useState(false);
   const [modalType, setModalType] = useState(null);
   const [modalPage, setModalPage] = useState(null);
   const [currSongId, setCurrSongId] = useState(null);
+  const [isShuffle, setIsShuffle] = useState(false);
 
-  const shuffled = arrayShuffle([
-    ...songs1,
-    ...songs2,
-    ...extras.filter((x) => x.id >= 60),
-  ]).slice(0, 20);
+  console.log(shuffled);
 
   return (
     <context.Provider
       value={{
         data,
         shuffled,
+        isShuffle,
+        setIsShuffle,
         currSongId,
         setCurrSongId,
         showModal,

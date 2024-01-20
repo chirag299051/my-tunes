@@ -1,9 +1,13 @@
 import React from "react";
 import Song from "./Song";
 
-const Page = ({ songs, page }) => {
-  const part1 = songs.filter((x) => (page === 1 ? x.id <= 15 : x.id <= 35));
-  const part2 = songs.filter((x) => (page === 1 ? x.id > 15 : x.id > 35));
+const Page = ({ songs, page, isShuffle }) => {
+  const part1 = isShuffle
+    ? songs.slice(0, 15)
+    : songs.filter((x) => (page === 1 ? x.id <= 15 : x.id <= 35));
+  const part2 = isShuffle
+    ? songs.slice(15)
+    : songs.filter((x) => (page === 1 ? x.id > 15 : x.id > 35));
 
   return (
     <div className="page">

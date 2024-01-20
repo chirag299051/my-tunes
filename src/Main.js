@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Page from "./Page";
 import Modal from "react-bootstrap/Modal";
 import { context } from "./App";
@@ -9,6 +9,9 @@ import Player from "./Player";
 const Main = () => {
   const {
     data,
+    isShuffle,
+    setIsShuffle,
+    shuffled,
     currSongId,
     setCurrSongId,
     showModal,
@@ -18,19 +21,36 @@ const Main = () => {
   } = useContext(context);
   const { songs1, songs2, extras } = data;
 
-  useEffect(() => {
-    modalPage === 3 && setCurrSongId(51);
-  }, [modalPage]);
+  const btnClass = isShuffle ? "btn-shuffle on" : "btn-shuffle";
 
   const song =
     modalPage === 3
       ? extras.find((x) => x.id === currSongId)
       : [...songs1, ...songs2].find((x) => x.id === currSongId);
 
+  useEffect(() => {
+    modalPage === 3 && setCurrSongId(51);
+  }, [modalPage]);
+
+  const handleShuffle = () => {
+    if (isShuffle) {
+      window.location.reload();
+      return;
+    }
+    setIsShuffle(!isShuffle);
+  };
+
   return (
     <div className="main">
       <div className="wrapper">
-        <Page songs={songs1} page={1} />
+        <button className={btnClass} onClick={handleShuffle}>
+          SHUFFLE
+        </button>
+        <Page
+          songs={!isShuffle ? songs1 : shuffled}
+          isShuffle={isShuffle}
+          page={1}
+        />
         <Page songs={songs2} page={2} />
         <Modal
           show={showModal}
@@ -50,7 +70,13 @@ const Main = () => {
           <Modal.Body className="grid">
             <Playlist
               songs={
-                modalPage === 1 ? songs1 : modalPage === 2 ? songs2 : extras
+                isShuffle
+                  ? shuffled
+                  : modalPage === 1
+                  ? songs1
+                  : modalPage === 2
+                  ? songs2
+                  : extras
               }
             />
             <div className="player">
