@@ -12,6 +12,13 @@ code {
     monospace;
 }
 
+/* video.video-stream.html5-main-video {
+  position: absolute !important;
+  top: 0 !important;
+  width: 100px !important;
+  height: 100px !important;
+} */
+
 .navbar.bg-dark {
   background-color: black !important;
 }

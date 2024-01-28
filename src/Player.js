@@ -49,6 +49,7 @@ const Player = ({ url }) => {
       }}
       url={url}
       onEnded={() => setCurrSongId(currSongId + 1 ? currSongId + 1 : 1)}
+      // style={{ position: "absolute", top: "0" }}
       width={"100%"}
       height={710}
     />
