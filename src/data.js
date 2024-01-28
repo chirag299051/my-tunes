@@ -271,15 +271,6 @@ export const songs2 = [
   },
   {
     id: 29,
-    title: "Humnava Mere",
-    url: "https://www.youtube.com/watch?v=M7xe9JzLDkA",
-    lyrics: "https://www.youtube.com/watch?v=-U_Q-UxtX-M",
-    chords: ["Em D C D Em", "Em Am D-Bm", "Em D C Bm C D"],
-    strumming: "DD UUD DDU",
-    img: "https://i.ytimg.com/vi/M7xe9JzLDkA/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBTJPF0W_hOBlfb4UA1TpkrbKVXiA",
-  },
-  {
-    id: 30,
     title: "Khamoshiyan",
     url: "https://www.youtube.com/watch?v=Te71caGBmUk",
     lyrics: "https://www.youtube.com/watch?v=qN88U6ZqR-4",
@@ -288,7 +279,7 @@ export const songs2 = [
     img: "https://i.ytimg.com/vi/Te71caGBmUk/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCD4NhIh1_CxSDSFYEvRNTMgG5xQg",
   },
   {
-    id: 31,
+    id: 30,
     title: "Hamari Adhuri Kahani",
     url: "https://www.youtube.com/watch?v=CvREKj8Evnc&t=327s",
     lyrics: "https://www.youtube.com/watch?v=SRkfDLZxSww",
@@ -298,7 +289,7 @@ export const songs2 = [
   },
 
   {
-    id: 32,
+    id: 31,
     title: "Kesariya",
     url: "https://www.youtube.com/watch?v=E3XqfI_jmbM",
     lyrics: "https://www.youtube.com/watch?v=W1S9AbHpWFY",
@@ -307,7 +298,7 @@ export const songs2 = [
     img: "https://i.ytimg.com/vi/E3XqfI_jmbM/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfU7g0JfOZbRMHNq6BatRtPYqaMw",
   },
   {
-    id: 33,
+    id: 32,
     title: "Dil Ko Karar Aaya - Capo 4th",
     url: "https://www.youtube.com/watch?v=87gv9coTbYo",
     lyrics: "https://www.youtube.com/watch?v=Jm9tuXUawxk",
@@ -316,7 +307,7 @@ export const songs2 = [
     img: "https://i.ytimg.com/vi/87gv9coTbYo/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD9ag_g17bIMSbttMW6HzOgfQeQ5g",
   },
   {
-    id: 34,
+    id: 33,
     title: "Baarish - Capo 3rd",
     url: "https://www.youtube.com/watch?v=9erEl9-sdOo",
     lyrics: "https://www.youtube.com/watch?v=QWkhWsMTugA",
@@ -325,7 +316,7 @@ export const songs2 = [
     img: "https://i.ytimg.com/vi/9erEl9-sdOo/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCqOYVYSVzDtTFjjHJmWOI9qiqzQQ",
   },
   {
-    id: 35,
+    id: 34,
     title: "Khairiyat - Capo 3rd",
     url: "https://www.youtube.com/watch?v=LUjx5vh5Id8",
     lyrics: "https://www.youtube.com/watch?v=wGAhDeobiac",
@@ -335,7 +326,7 @@ export const songs2 = [
   },
 
   {
-    id: 36,
+    id: 35,
     title: "Jitni Dafa - Capo 1st",
     url: "https://www.youtube.com/watch?v=L7cgv9KDTaw",
     lyrics: "https://www.youtube.com/watch?v=EsrenIAGrzo",
@@ -344,13 +335,22 @@ export const songs2 = [
     img: "https://i.ytimg.com/vi/L7cgv9KDTaw/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAFSMxLFSBRKkCxtFzNQqAcvNicdw",
   },
   {
-    id: 37,
+    id: 36,
     title: "Shayad - Capo 1st",
     url: "https://www.youtube.com/watch?v=d2u_TKR7btc",
     lyrics: "https://www.youtube.com/watch?v=OnAyBZQc1vk",
     chords: ["Em G D-Bm C G"],
     strumming: "D D UDUD DDU",
     img: "https://i.ytimg.com/vi/d2u_TKR7btc/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBxhVf3bMTmUO6_f0uaZHpLicJ6iQ",
+  },
+  {
+    id: 37,
+    title: "Humnava Mere Capo - 1st",
+    url: "https://www.youtube.com/watch?v=M7xe9JzLDkA",
+    lyrics: "https://www.youtube.com/watch?v=-U_Q-UxtX-M",
+    chords: ["Em D C D Em", "Em Am D-Bm", "Em D C Bm C D"],
+    strumming: "DD UUD DDU",
+    img: "https://i.ytimg.com/vi/M7xe9JzLDkA/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBTJPF0W_hOBlfb4UA1TpkrbKVXiA",
   },
   {
     id: 38,
