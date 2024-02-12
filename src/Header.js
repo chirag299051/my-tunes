@@ -12,9 +12,9 @@ const Header = () => {
 
   const handleExtrasClick = () => {
     setShowModal(true);
-    setCurrSongId(51);
+    setCurrSongId(68);
     setModalType("title");
-    setModalPage(3);
+    setModalPage(4);
   };
 
   const handleChordsClick = () => {

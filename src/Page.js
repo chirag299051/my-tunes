@@ -4,10 +4,19 @@ import Song from "./Song";
 const Page = ({ songs, page, isShuffle }) => {
   const part1 = isShuffle
     ? songs.slice(0, 15)
-    : songs.filter((x) => (page === 1 ? x.id <= 15 : x.id <= 35));
+    : songs.filter((x) => {
+        if (page === 1) return x.id <= 15;
+        if (page === 2) return x.id <= 35;
+        if (page === 3) return x.id <= 55;
+      });
+
   const part2 = isShuffle
     ? songs.slice(15)
-    : songs.filter((x) => (page === 1 ? x.id > 15 : x.id > 35));
+    : songs.filter((x) => {
+        if (page === 1) return x.id > 15;
+        if (page === 2) return x.id > 35;
+        if (page === 3) return x.id > 55;
+      });
 
   return (
     <div className="page">

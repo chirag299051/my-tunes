@@ -19,17 +19,17 @@ const Main = () => {
     modalType,
     modalPage,
   } = useContext(context);
-  const { songs1, songs2, extras } = data;
+  const { songs1, songs2, songs3, extras } = data;
 
   const btnClass = isShuffle ? "btn-shuffle on" : "btn-shuffle";
 
   const song =
-    modalPage === 3
+    modalPage === 4
       ? extras.find((x) => x.id === currSongId)
-      : [...songs1, ...songs2].find((x) => x.id === currSongId);
+      : [...songs1, ...songs2, ...songs3].find((x) => x.id === currSongId);
 
   useEffect(() => {
-    modalPage === 3 && setCurrSongId(51);
+    modalPage === 4 && setCurrSongId(61);
   }, [modalPage]);
 
   const handleShuffle = () => {
@@ -52,6 +52,7 @@ const Main = () => {
           page={1}
         />
         <Page songs={songs2} page={2} />
+        <Page songs={songs3} page={3} />
         <Modal
           show={showModal}
           onHide={() => setShowModal(false)}
@@ -76,6 +77,8 @@ const Main = () => {
                   ? songs1
                   : modalPage === 2
                   ? songs2
+                  : modalPage === 3
+                  ? songs3
                   : extras
               }
             />
