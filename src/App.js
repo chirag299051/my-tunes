@@ -13,7 +13,9 @@ const shuffled = arrayShuffle([
   ...songs2,
   ...songs3,
   ...extras.filter((x) => x.id >= 72),
-]).slice(0, 20);
+])
+  .slice(0, 20)
+  .sort((a, b) => (a.id > b.id ? 1 : -1));
 
 function App() {
   const [data, setData] = useState({ songs1, songs2, songs3, extras });
