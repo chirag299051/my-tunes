@@ -83,14 +83,14 @@ const Header = () => {
                 </Nav.Link>
               </div>
               <div className="extra-links">
+                <Nav.Link className="extra-btn" onClick={handleExtrasClick}>
+                  Extras
+                </Nav.Link>
                 <Nav.Link className="extra-btn" onClick={handleCapoClick}>
                   Capo Chart
                 </Nav.Link>
                 <Nav.Link className="extra-btn" onClick={handleChordsClick}>
                   Chords
-                </Nav.Link>
-                <Nav.Link className="extra-btn" onClick={handleExtrasClick}>
-                  Extras
                 </Nav.Link>
               </div>
             </Nav>

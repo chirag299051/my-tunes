@@ -12,7 +12,7 @@ const shuffled = arrayShuffle([
   ...songs1,
   ...songs2,
   ...songs3,
-  ...extras.filter((x) => x.id >= 68),
+  ...extras.filter((x) => x.id >= 72),
 ]).slice(0, 20);
 
 function App() {
