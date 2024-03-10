@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import Page from "./Page";
 import Modal from "react-bootstrap/Modal";
 import { context } from "./App";
@@ -13,7 +13,6 @@ const Main = () => {
     setIsShuffle,
     shuffled,
     currSongId,
-    setCurrSongId,
     showModal,
     setShowModal,
     modalType,
@@ -28,9 +27,9 @@ const Main = () => {
       ? extras.find((x) => x.id === currSongId)
       : [...songs1, ...songs2, ...songs3].find((x) => x.id === currSongId);
 
-  useEffect(() => {
-    modalPage === 4 && setCurrSongId(61);
-  }, [modalPage]);
+  // useEffect(() => {
+  //   modalPage === 4 && setCurrSongId(61);
+  // }, [modalPage]);
 
   const handleShuffle = () => {
     if (isShuffle) {

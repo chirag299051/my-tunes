@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, createRef, useContext } from "react";
+import React from "react";
 import PlaylistItem from "./PlaylistItem";
 
 const Playlist = ({ songs }) => {

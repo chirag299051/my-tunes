@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect, useRef } from "react";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -6,12 +6,47 @@ import { context } from "./App";
 import Modal from "react-modal";
 import { FaPlay } from "react-icons/fa";
 import capo from "./assets/capo.png";
+import { Typeahead } from "react-bootstrap-typeahead";
 
 const Header = () => {
   const [chordModal, setChordModal] = useState(false);
   const [capoModal, setCapoModal] = useState(false);
-  const { setCurrSongId, setShowModal, setModalType, setModalPage } =
-    useContext(context);
+  const {
+    setCurrSongId,
+    showModal,
+    setShowModal,
+    setModalType,
+    setModalPage,
+    options,
+  } = useContext(context);
+  const [singleSelections, setSingleSelections] = useState([]);
+  const typeaheadRef = useRef(null);
+
+  useEffect(() => {
+    if (singleSelections[0]) {
+      const id = singleSelections[0].id;
+      setShowModal(true);
+      setCurrSongId(id);
+      setModalType("title");
+      setModalPage(id < 21 ? 1 : id < 41 ? 2 : id < 61 ? 3 : 4);
+    }
+    typeaheadRef.current.blur();
+  }, [
+    singleSelections,
+    setShowModal,
+    setCurrSongId,
+    setModalType,
+    setModalPage,
+  ]);
+
+  useEffect(() => {
+    setSingleSelections([]);
+  }, [showModal]);
+
+  const songs = options.map((x) => ({
+    id: x.id,
+    label: x.title,
+  }));
 
   const setPage = (page) => {
     setShowModal(true);
@@ -30,7 +65,7 @@ const Header = () => {
 
   const handleExtrasClick = () => {
     setShowModal(true);
-    setCurrSongId(68);
+    setCurrSongId(61);
     setModalType("title");
     setModalPage(4);
   };
@@ -62,7 +97,7 @@ const Header = () => {
   return (
     <div className="header">
       <Navbar bg="dark" className="bg-body-dark" expand="lg">
-        <Container>
+        <Container fluid>
           <Navbar.Brand href="/my-tunes/">my Tunes</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse
@@ -82,6 +117,19 @@ const Header = () => {
                   <FaPlay size={14} /> &nbsp;Page 3
                 </Nav.Link>
               </div>
+
+              <div className="search">
+                <Typeahead
+                  ref={typeaheadRef}
+                  id="basic-typeahead-single"
+                  labelKey={(option) => `${option.id}.  ${option.label}`}
+                  onChange={setSingleSelections}
+                  options={songs}
+                  placeholder="Search a song..."
+                  selected={singleSelections}
+                />
+              </div>
+
               <div className="extra-links">
                 <Nav.Link className="extra-btn" onClick={handleExtrasClick}>
                   Extras
@@ -123,7 +171,7 @@ const Header = () => {
           style={customStylesCapo}
           contentLabel="Example Modal"
         >
-          <img src={capo} style={{ width: "100%", height: "100%" }} />
+          <img src={capo} style={{ width: "100%", height: "100%" }} alt="img" />
         </Modal>
       )}
     </div>

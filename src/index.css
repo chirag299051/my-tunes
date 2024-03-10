@@ -29,13 +29,25 @@ code {
 }
 
 .navbar-brand {
+  margin-left: 100px;
   color: deepskyblue !important;
   font-weight: 600;
 }
 
+.container {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.navbar {
+  display: flex !important;
+  justify-content: space-between !important;
+}
 .navbar-nav {
   display: flex !important;
-  justify-content: center !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin-right: 0px;
 }
 
 a.nav-link.page-btn,
@@ -59,7 +71,17 @@ a.nav-link:focus {
 }
 .page-links {
   margin-left: 80px;
-  margin-right: 300px;
+  margin-right: 100px;
+}
+
+.search input {
+  margin-right: 100px;
+  width: 300px;
+  border-radius: 50px;
+  height: 30px;
+}
+#basic-typeahead-single {
+  background-color: rgb(202, 205, 211);
 }
 
 .main {

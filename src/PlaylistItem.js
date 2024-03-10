@@ -2,7 +2,7 @@ import React, { forwardRef, useContext } from "react";
 import { context } from "./App";
 
 const PlaylistItem = forwardRef((props, ref) => {
-  const { id, title, url, lyrics, img } = props.item;
+  const { id, title, img } = props.item;
   const { currSongId, setCurrSongId } = useContext(context);
   const classes = currSongId === id ? "item active" : "item";
 

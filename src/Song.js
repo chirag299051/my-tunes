@@ -5,7 +5,7 @@ import { context } from "./App";
 import ScrollIntoView from "react-scroll-into-view";
 
 const Song = ({ song }) => {
-  const { id, title, url, lyrics, chords, strumming } = song;
+  const { id, title, lyrics, chords, strumming } = song;
   const { setCurrSongId, setShowModal, setModalType, setModalPage } =
     useContext(context);
 

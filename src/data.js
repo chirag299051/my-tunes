@@ -91,12 +91,12 @@ export const songs1 = [
   },
   {
     id: 11,
-    title: "Tum Hi Ho",
-    url: "https://www.youtube.com/watch?v=h07HKdiCDq0&t=526s",
+    title: "Tum Hi Ho - Capo 1st",
+    url: "https://www.youtube.com/watch?v=8XBZ9zuwxa0",
     lyrics: "https://www.youtube.com/watch?v=asxmdFaIock",
-    chords: ["Em Am D Bm Em"],
-    strumming: "D D UDUD DDU",
-    img: "https://i.ytimg.com/vi/h07HKdiCDq0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC8ALmO15pzUHxJVISEZl5Xk2edIw",
+    chords: ["Em Am D Bm C", "Em Bm Am Em", "D G B C-D", "C Bm-Am Em"],
+    strumming: "D DD DDDU",
+    img: "https://i.ytimg.com/vi/8XBZ9zuwxa0/hqdefault.jpg?sqp=-oaymwEpCPYBEIoBSFryq4qpAxsIARUAAIhCGAHYAQHiAQwIFhACGAYgATgBQAE=&rs=AOn4CLCRAAA9L9OMPeuiE8ubDKXYL4IPSw",
   },
   {
     id: 12,

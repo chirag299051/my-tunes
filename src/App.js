@@ -6,14 +6,18 @@ import { songs1, songs2, songs3, extras } from "./data";
 import { createContext, useState } from "react";
 import arrayShuffle from "array-shuffle";
 
+import "react-bootstrap-typeahead/css/Typeahead.css";
+
 export const context = createContext();
 
-const shuffled = arrayShuffle([
+const options = [
   ...songs1,
   ...songs2,
   ...songs3,
   ...extras.filter((x) => x.id >= 72),
-])
+];
+
+const shuffled = arrayShuffle(options)
   .slice(0, 20)
   .sort((a, b) => (a.id > b.id ? 1 : -1));
 
@@ -29,6 +33,7 @@ function App() {
     <context.Provider
       value={{
         data,
+        options,
         shuffled,
         isShuffle,
         setIsShuffle,
