@@ -104,7 +104,7 @@ export const songs1 = [
     url: "https://www.youtube.com/watch?v=Pz4c1N4PUb8",
     lyrics: "https://www.youtube.com/watch?v=S8BHBts-rgk",
     chords: ["Em D C D"],
-    strumming: "D D UUD DDU",
+    strumming: "D D UDUD DDU",
     img: "https://i.ytimg.com/vi/Pz4c1N4PUb8/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBZ3RNYYM8S-ZYT0Ho_6RX7NEYTTg",
   },
   {
@@ -168,7 +168,7 @@ export const songs1 = [
     url: "https://www.youtube.com/watch?v=vRUhpLyT1h4",
     lyrics: "https://www.youtube.com/watch?v=2c_43PKXxKk",
     chords: ["Am G F Am", "G Am G Am", "C G F E"],
-    strumming: "D D UUD DDU",
+    strumming: "D D UDUD DDU",
     img: "https://i.ytimg.com/vi/vRUhpLyT1h4/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBSZP5fSRyktdhk1KoufSBFYnDYRA",
   },
   {
@@ -177,7 +177,7 @@ export const songs1 = [
     url: "https://www.youtube.com/watch?v=NJHXCMtZbc0",
     lyrics: "https://www.youtube.com/watch?v=vzlyLJqxegA",
     chords: ["Am Dm G C"],
-    strumming: "D D UUD DDU",
+    strumming: "D D UDUD DDU",
     img: "https://i.ytimg.com/vi/NJHXCMtZbc0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBQJHghFQINJA7p4DMaGzhSeq84KQ",
   },
 ];
@@ -190,7 +190,7 @@ export const songs2 = [
     url: "https://www.youtube.com/watch?v=QpwPIOBDSjg",
     lyrics: "https://www.youtube.com/watch?v=hcJl3ovWsYg",
     chords: ["D#m G#m D#m G#m C#", "D#m B C#", "D#m C# B G#m", "F# A#m B C#"],
-    strumming: "D UDUD UDUD UDU",
+    strumming: "D UDUD UDU DUDU",
     img: "https://i.ytimg.com/vi/QpwPIOBDSjg/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB7RKaIw1L17kn4XJ5WNg0UawXLZg",
   },
   {
@@ -262,7 +262,7 @@ export const songs2 = [
     url: "https://www.youtube.com/watch?v=Yz2zuONh6Fs",
     lyrics: "https://www.youtube.com/watch?v=IyGDL1F0EeY",
     chords: ["Fm - F G# D#m A#m", "A#m F# D#m C#"],
-    strumming: "D UDUD UDUD DU",
+    strumming: "D UDUD UDUD",
     img: "https://i.ytimg.com/vi/Yz2zuONh6Fs/hqdefault.jpg?sqp=-oaymwEpCPYBEIoBSFryq4qpAxsIARUAAIhCGAHYAQHiAQwIFhACGAYgATgBQAE=&rs=AOn4CLCIfPM_LOOUDJup1uhXxU0pAE6t-g",
   },
   {
@@ -298,7 +298,7 @@ export const songs2 = [
     url: "https://www.youtube.com/watch?v=87gv9coTbYo",
     lyrics: "https://www.youtube.com/watch?v=Jm9tuXUawxk",
     chords: ["Em G D C-D"],
-    strumming: "D D D UUD DDU",
+    strumming: "D D UDUD DDU",
     img: "https://i.ytimg.com/vi/87gv9coTbYo/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD9ag_g17bIMSbttMW6HzOgfQeQ5g",
   },
   {
@@ -344,7 +344,7 @@ export const songs2 = [
     url: "https://www.youtube.com/watch?v=M7xe9JzLDkA",
     lyrics: "https://www.youtube.com/watch?v=-U_Q-UxtX-M",
     chords: ["Em D C D Em", "Em Am D-Bm", "Em D C Bm C D"],
-    strumming: "DD UUD DDU",
+    strumming: "D D UDUD DDU",
     img: "https://i.ytimg.com/vi/M7xe9JzLDkA/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBTJPF0W_hOBlfb4UA1TpkrbKVXiA",
   },
   {
@@ -362,7 +362,7 @@ export const songs2 = [
     url: "https://www.youtube.com/watch?v=aF3D7M0nsv0&t=599s",
     lyrics: "https://www.youtube.com/watch?v=dnGPhxd4P4s",
     chords: ["C Em", "Em D Bm C", "D Am C Em"],
-    strumming: "DCU UCU",
+    strumming: "DUCU UCU",
     img: "https://i.ytimg.com/vi/aF3D7M0nsv0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLArdju_w8j3oHn9YUB5S8hvHDEk3Q",
   },
   {
@@ -371,7 +371,7 @@ export const songs2 = [
     url: "https://www.youtube.com/watch?v=iwSWMcyuiCw&t=283s",
     lyrics: "https://www.youtube.com/watch?v=zApYIJfX3nk",
     chords: ["Em D C D C Em"],
-    strumming: "D D UUD DDU",
+    strumming: "D D UDUD DDU",
     img: "https://i.ytimg.com/vi/iwSWMcyuiCw/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD3t_faohmJwO8mKVSDQk_X8V_vSQ",
   },
 ];
