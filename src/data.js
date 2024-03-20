@@ -586,7 +586,7 @@ export const extras = [
   {
     id: 63,
     title: "Fingerstyle Exercise",
-    url: "https://www.youtube.com/watch?v=znz6P3wkNP4&list=WL&index=5&pp=gAQBiAQB",
+    url: "https://www.youtube.com/watch?v=znz6P3wkNP4&t=345s",
     lyrics: "",
     chords: [""],
     strumming: "",

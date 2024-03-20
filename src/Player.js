@@ -12,7 +12,6 @@ const Player = ({ url }) => {
 
   useEffect(() => {
     play();
-
     const handleKeyPress = (event) => {
       console.log(playerRef.current);
       if (playerRef.current) {
@@ -39,6 +38,7 @@ const Player = ({ url }) => {
       ref={playerRef}
       playing={playing}
       controls={true}
+      disableDeferredLoading={true}
       config={{
         youtube: {
           playerVars: {
