@@ -27,10 +27,6 @@ const Main = () => {
       ? extras.find((x) => x.id === currSongId)
       : [...songs1, ...songs2, ...songs3].find((x) => x.id === currSongId);
 
-  // useEffect(() => {
-  //   modalPage === 4 && setCurrSongId(61);
-  // }, [modalPage]);
-
   const handleShuffle = () => {
     if (isShuffle) {
       window.location.reload();

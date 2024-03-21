@@ -14,7 +14,7 @@ const options = [
   ...songs1,
   ...songs2,
   ...songs3,
-  ...extras.filter((x) => x.id >= 77),
+  ...extras.filter((x) => x.id >= 75),
 ];
 
 const shuffled = arrayShuffle(options)
