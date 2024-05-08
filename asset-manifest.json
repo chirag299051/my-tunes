@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/my-tunes/static/css/main.0cf09701.css",
-    "main.js": "/my-tunes/static/js/main.84258c90.js",
+    "main.js": "/my-tunes/static/js/main.f0f66b7f.js",
     "reactPlayerPreview.js": "/my-tunes/static/js/reactPlayerPreview.51042a1d.chunk.js",
     "static/media/capo.png": "/my-tunes/static/media/capo.54b4454e1ae8332d867e.png",
     "static/media/menu.svg": "/my-tunes/static/media/menu.cd4589e9cb256d684925.svg",
     "index.html": "/my-tunes/index.html",
     "main.0cf09701.css.map": "/my-tunes/static/css/main.0cf09701.css.map",
-    "main.84258c90.js.map": "/my-tunes/static/js/main.84258c90.js.map",
+    "main.f0f66b7f.js.map": "/my-tunes/static/js/main.f0f66b7f.js.map",
     "reactPlayerPreview.51042a1d.chunk.js.map": "/my-tunes/static/js/reactPlayerPreview.51042a1d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0cf09701.css",
-    "static/js/main.84258c90.js"
+    "static/js/main.f0f66b7f.js"
   ]
 }
