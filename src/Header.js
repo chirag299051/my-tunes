@@ -62,7 +62,7 @@ const Header = () => {
     <div className="header">
       <Navbar bg="dark" className="bg-body-dark" expand="lg">
         <Container fluid>
-          <Navbar.Brand href="/my-tunes/">my Tunes</Navbar.Brand>
+          <Navbar.Brand href="/">my Tunes</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse
             id="basic-navbar-nav"
@@ -71,13 +71,13 @@ const Header = () => {
           >
             <Nav className="me-auto">
               <div className="page-links">
-                <Link to="/main/1/1" className="page-btn">
+                <Link to="main/1/1" className="page-btn">
                   <FaPlay size={14} /> &nbsp;Page 1
                 </Link>
-                <Link to="/main/2/21" className="page-btn">
+                <Link to="main/2/21" className="page-btn">
                   <FaPlay size={14} /> &nbsp;Page 2
                 </Link>
-                <Link to="/main/3/41" className="page-btn">
+                <Link to="main/3/41" className="page-btn">
                   <FaPlay size={14} /> &nbsp;Page 3
                 </Link>
               </div>
