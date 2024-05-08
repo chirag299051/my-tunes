@@ -12,7 +12,7 @@ const Song = ({ song }) => {
 
   return (
     <ScrollIntoView className="song" selector=".active">
-      <Link to={`/main/${page}/${id}`}>
+      <Link to={`/my-tunes/main/${page}/${id}`}>
         <span className="span center">{id}.</span>
         <span className="span">
           <i>{title}</i>
@@ -23,7 +23,7 @@ const Song = ({ song }) => {
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();
-              navigate(`/lyrics/${page}/${id}`);
+              navigate(`/my-tunes/lyrics/${page}/${id}`);
             }}
           >
             <FaYoutube color="deepskyblue" size={26} />
