@@ -95,7 +95,11 @@ const Player = () => {
             }}
             url={type === "main" ? song?.url : song?.lyrics}
             onEnded={() =>
-              navigate(`/my-tunes/${type}/${page}/${id + 1 ? id + 1 : 1}`)
+              navigate(
+                `/my-tunes/${type}/${page}/${
+                  Number(id) + 1 ? Number(id) + 1 : 1
+                }`
+              )
             }
           />
         </div>
