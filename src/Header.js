@@ -62,7 +62,7 @@ const Header = () => {
     <div className="header">
       <Navbar bg="dark" className="bg-body-dark" expand="lg">
         <Container fluid>
-          <Navbar.Brand href="/">my Tunes</Navbar.Brand>
+          <Navbar.Brand href="/my-tunes/">my Tunes</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse
             id="basic-navbar-nav"

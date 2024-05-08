@@ -15,7 +15,7 @@ const Routes = () => {
   return (
     <Router>
       <Route path="/my-tunes/" element={<Main />}></Route>
-      <Route path="/:type/:page/:id" element={<Player />}></Route>
+      <Route path="/my-tunes/:type/:page/:id" element={<Player />}></Route>
     </Router>
   );
 };
