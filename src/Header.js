@@ -71,13 +71,13 @@ const Header = () => {
           >
             <Nav className="me-auto">
               <div className="page-links">
-                <Link to="/main/1/1" className="page-btn" relative="path">
+                <Link to="/main/1/1" className="page-btn">
                   <FaPlay size={14} /> &nbsp;Page 1
                 </Link>
-                <Link to="/main/2/21" className="page-btn" relative="path">
+                <Link to="/main/2/21" className="page-btn">
                   <FaPlay size={14} /> &nbsp;Page 2
                 </Link>
-                <Link to="/main/3/41" className="page-btn" relative="path">
+                <Link to="/main/3/41" className="page-btn">
                   <FaPlay size={14} /> &nbsp;Page 3
                 </Link>
               </div>
