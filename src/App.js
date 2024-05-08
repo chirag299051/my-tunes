@@ -14,7 +14,7 @@ import Player from "./Player";
 const Routes = () => {
   return (
     <Router>
-      <Route path="/" element={<Main />}></Route>
+      <Route path="/my-tunes/" element={<Main />}></Route>
       <Route path="/:type/:page/:id" element={<Player />}></Route>
     </Router>
   );
