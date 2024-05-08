@@ -58,7 +58,7 @@ const Player = () => {
           <RxCross1
             className="btn-close"
             color="red"
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/my-tunes/")}
           />
         </div>
 
@@ -94,7 +94,9 @@ const Player = () => {
               },
             }}
             url={type === "main" ? song?.url : song?.lyrics}
-            onEnded={() => navigate(`/${type}/${page}/${id + 1 ? id + 1 : 1}`)}
+            onEnded={() =>
+              navigate(`/my-tunes/${type}/${page}/${id + 1 ? id + 1 : 1}`)
+            }
           />
         </div>
       </div>
