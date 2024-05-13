@@ -7,7 +7,7 @@ const PlaylistItem = forwardRef((props, ref) => {
   const classes = currId == id ? "item active" : "item";
 
   return (
-    <Link className={classes} to={`/my-tunes/${type}/${page}/${currId}`}>
+    <Link className={classes} to={`/${type}/${page}/${currId}`}>
       <p>{currId}.</p>&nbsp;&nbsp;
       <img src={img} alt="" />
       &nbsp;&nbsp;
