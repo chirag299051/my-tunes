@@ -3,8 +3,8 @@ import ReactPlayer from "react-player/youtube";
 import { context } from "./App";
 import Song from "./Song";
 import Playlist from "./Playlist";
-import { useNavigate, useParams } from "react-router-dom";
-import { RxCross1 } from "react-icons/rx";
+import { Link, useNavigate, useParams } from "react-router-dom";
+// import { RxCross1 } from "react-icons/rx";
 
 const Player = () => {
   const { data, isShuffle, shuffled } = useContext(context);
@@ -59,11 +59,9 @@ const Player = () => {
       <div className="player-wrapper">
         <div className="player-header">
           {song && <Song key={Math.random()} song={song} />}
-          <RxCross1
-            className="btn-close"
-            color="red"
-            onClick={() => navigate("/")}
-          />
+          <Link className="close-btn" to="/">
+            CLOSE
+          </Link>
         </div>
 
         <div className="player-main">

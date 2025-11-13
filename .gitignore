@@ -1,4 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+// change css for phone/tablets:
+// .header
+// .player-container
+// .strumming-btn
 
 # dependencies
 /node_modules
