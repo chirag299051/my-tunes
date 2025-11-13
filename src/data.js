@@ -1,3 +1,15 @@
+export const strumming = [
+  {
+    id: 0,
+    title: "Strumming",
+    url: "https://www.youtube.com/watch?v=fAs6jwQp9XU&t=246s",
+    lyrics: "",
+    chords: [""],
+    strumming: "",
+    img: "https://i.ytimg.com/vi/fAs6jwQp9XU/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBpj5pAsEm4f3h1ASldo9QsaRcpzg",
+  },
+];
+
 export const songs1 = [
   {
     id: 1,

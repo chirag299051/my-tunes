@@ -14,13 +14,17 @@ const Player = () => {
   const play = () => setPlaying(true);
   const navigate = useNavigate();
 
-  const { songs1, songs2, songs3, extras } = data;
+  const { strumming, songs1, songs2, songs3, extras } = data;
   const { type, page, id } = useParams();
 
   useEffect(() => {
-    const song = [...songs1, ...songs2, ...songs3, ...extras].find(
-      (x) => x.id == id
-    );
+    const song = [
+      ...strumming,
+      ...songs1,
+      ...songs2,
+      ...songs3,
+      ...extras,
+    ].find((x) => x.id == id);
     setSong(song);
   }, [type, page, id]);
 
@@ -67,6 +71,8 @@ const Player = () => {
             songs={
               isShuffle
                 ? shuffled
+                : page == 0
+                ? strumming
                 : page == 1
                 ? songs1
                 : page == 2

@@ -2,7 +2,7 @@ import "./App.css";
 import Header from "./Header";
 import Footer from "./Footer";
 import Main from "./Main";
-import { songs1, songs2, songs3, extras } from "./data";
+import { strumming, songs1, songs2, songs3, extras } from "./data";
 import { createContext, useState } from "react";
 import arrayShuffle from "array-shuffle";
 
@@ -34,7 +34,13 @@ const shuffled = arrayShuffle(options)
   .sort((a, b) => (a.id > b.id ? 1 : -1));
 
 function App() {
-  const [data, setData] = useState({ songs1, songs2, songs3, extras });
+  const [data, setData] = useState({
+    strumming,
+    songs1,
+    songs2,
+    songs3,
+    extras,
+  });
   const [modal, setModal] = useState(null);
   const [isShuffle, setIsShuffle] = useState(false);
 

@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+.header {
+  width: 100vw;
+  position: fixed;
+}
+
 .navbar-toggler span.navbar-toggler-icon {
   background-image: url("./assets/menu.svg") !important;
 }
@@ -53,15 +58,16 @@ code {
 a.page-btn,
 a.nav-link.extra-btn {
   color: aliceblue;
-  margin-left: 50px;
+  margin-right: 10px;
   padding: 10px;
-  background-color: rgb(33, 37, 41);
+  background-color: black;
   text-decoration: none;
   display: flex;
   align-items: center;
 }
 a.page-btn:hover {
   color: rgb(182, 0, 0);
+  background-color: rgb(33, 37, 41);
 }
 a.extra-btn:hover {
   color: cyan;
@@ -72,10 +78,26 @@ a.nav-link:focus {
 .page-links,
 .extra-links {
   display: flex;
+  margin-right: 0px;
 }
 .page-links {
   margin-left: 80px;
   margin-right: 100px;
+}
+
+.page-links .strumming-btn {
+  color: rgb(44, 184, 231);
+  background-color: black;
+  padding: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  outline: none;
+}
+
+.page-links .strumming-btn:hover {
+  color: rgb(182, 0, 0);
 }
 
 .search input {
@@ -89,6 +111,7 @@ a.nav-link:focus {
 }
 
 .main {
+  padding-top: 50px;
   min-height: 100vh;
   background-color: rgb(33, 37, 41);
   display: flex;
@@ -99,6 +122,10 @@ a.nav-link:focus {
   max-width: 90vw;
   min-height: 80vh;
 }
+.main .wrapper .flex-btn {
+  display: flex;
+}
+
 .wrapper .btn-shuffle {
   color: black;
   background: rgb(178, 208, 255);

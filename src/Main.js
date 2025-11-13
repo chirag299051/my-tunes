@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import Page from "./Page";
 import { context } from "./App";
+import { Link } from "react-router-dom";
 
 const Main = () => {
   const { data, isShuffle, setIsShuffle, shuffled } = useContext(context);
@@ -19,9 +20,11 @@ const Main = () => {
   return (
     <div className="main">
       <div className="wrapper">
-        <button className={btnClass} onClick={handleShuffle}>
-          SHUFFLE
-        </button>
+        <div className="flex-btn">
+          <button className={btnClass} onClick={handleShuffle}>
+            SHUFFLE
+          </button>
+        </div>
         <Page
           songs={!isShuffle ? songs1 : shuffled}
           isShuffle={isShuffle}
