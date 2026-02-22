@@ -19,7 +19,7 @@ const Header = () => {
   useEffect(() => {
     if (singleSelections[0]) {
       const id = singleSelections[0].id;
-      const page = id == 0 ? 0 : id < 21 ? 1 : id < 41 ? 2 : id < 61 ? 3 : 4;
+      const page = id < 1 ? 0 : id < 21 ? 1 : id < 41 ? 2 : id < 61 ? 3 : 4;
       navigate(`/main/${page}/${id}`);
     }
     typeaheadRef.current.blur();
@@ -80,7 +80,7 @@ const Header = () => {
                 <Link to="/main/3/41" className="page-btn">
                   <FaPlay size={14} /> &nbsp;Page 3
                 </Link>
-                <Link to="/main/0/0" className="strumming-btn">
+                <Link to="/main/0/0.1" className="strumming-btn">
                   STRUMMING
                 </Link>
               </div>

@@ -1,12 +1,21 @@
 export const strumming = [
   {
-    id: 0,
-    title: "Strumming",
+    id: 0.1,
+    title: "Strumming 1",
     url: "https://www.youtube.com/watch?v=fAs6jwQp9XU&t=246s",
     lyrics: "",
     chords: [""],
     strumming: "",
     img: "https://i.ytimg.com/vi/fAs6jwQp9XU/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBpj5pAsEm4f3h1ASldo9QsaRcpzg",
+  },
+  {
+    id: 0.2,
+    title: "Strumming 2",
+    url: "https://www.youtube.com/watch?v=Kz4oBTxh68A&t=95s",
+    lyrics: "",
+    chords: [""],
+    strumming: "",
+    img: "https://i.ytimg.com/vi/Kz4oBTxh68A/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDUdPPXFBLyLE9H-g_0leYVzZXfcQ",
   },
 ];
 
@@ -650,12 +659,12 @@ export const songs3 = [
 export const extras = [
   {
     id: 61,
-    title: "3 Basic Finger Exercises",
-    url: "https://www.youtube.com/watch?v=yoRg2fHQyLM",
+    title: "3 Next level Finger Exercises",
+    url: "https://www.youtube.com/watch?v=hSBleQQY4qY&t=120s",
     lyrics: "",
     chords: [""],
     strumming: "",
-    img: "https://i.ytimg.com/vi/yoRg2fHQyLM/hqdefault.jpg?sqp=-oaymwEpCPYBEIoBSFryq4qpAxsIARUAAIhCGAHYAQHiAQwIFhACGAYgATgBQAE=&rs=AOn4CLBojco9hn3KNQrmBfnLo3VN6Oagyg",
+    img: "https://i.ytimg.com/an_webp/hSBleQQY4qY/mqdefault_6s.webp?du=3000&sqp=CIT26swG&rs=AOn4CLB0PRO0F5lhiVnA-QeK1x75DjThSw",
   },
   {
     id: 62,
