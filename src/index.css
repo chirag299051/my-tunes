@@ -12,6 +12,21 @@ code {
     source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+.dropdown-menu {
+  margin-top: 0 !important;
+  background-color: #212529 !important; /* Bootstrap dark */
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+.dropdown-item {
+  color: #fff !important;
+  padding: 10px !important;
+}
+
+.dropdown-item:hover {
+  background-color: #343a40 !important;
+}
+
 .header {
   width: 100vw;
   position: fixed;
@@ -52,13 +67,14 @@ code {
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
-  margin-right: 0px;
+  margin-right: 0px !important;
+  width: 85%;
 }
 
 a.page-btn,
 a.nav-link.extra-btn {
   color: aliceblue;
-  margin-right: 10px;
+  margin-right: 40px;
   padding: 10px;
   background-color: black;
   text-decoration: none;
@@ -77,19 +93,20 @@ a.nav-link:focus {
 }
 .page-links,
 .extra-links {
-  display: flex;
-  margin-right: 0px;
+  display: flex !important;
 }
 .page-links {
   margin-left: 80px;
   margin-right: 100px;
+  align-items: center;
 }
 
 .page-links .strumming-btn {
   color: rgb(44, 184, 231);
   background-color: black;
   padding: 10px;
-  margin-left: 20px;
+  margin-left: 80px;
+  margin-right: 50px;
   cursor: pointer;
   border: none;
   text-decoration: none;
@@ -355,6 +372,9 @@ a.nav-link:focus {
   }
   h5.heading ~ .heading {
     display: none;
+  }
+  .navbar-nav {
+    width: 100%;
   }
 }
 

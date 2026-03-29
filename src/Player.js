@@ -70,14 +70,14 @@ const Player = () => {
               isShuffle
                 ? shuffled
                 : page == 0
-                ? strumming
-                : page == 1
-                ? songs1
-                : page == 2
-                ? songs2
-                : page == 3
-                ? songs3
-                : extras
+                  ? strumming
+                  : page == 1
+                    ? songs1
+                    : page == 2
+                      ? songs2
+                      : page == 3
+                        ? songs3
+                        : extras
             }
             type
           />
@@ -100,7 +100,7 @@ const Player = () => {
             url={type === "main" ? song?.url : song?.lyrics}
             onEnded={() =>
               navigate(
-                `/${type}/${page}/${Number(id) + 1 ? Number(id) + 1 : 1}`
+                `/${type}/${page}/${id < 1 ? Number(id) + 0.1 : Number(id) + 1 ? Number(id) + 1 : 1}`,
               )
             }
           />

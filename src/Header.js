@@ -6,15 +6,25 @@ import { context } from "./App";
 import Modal from "react-modal";
 import { FaPlay } from "react-icons/fa";
 import capo from "./assets/capo.png";
+import got from "./assets/tabs/GOT Theme.jpg";
 import { Typeahead } from "react-bootstrap-typeahead";
+import Dropdown from "react-bootstrap/Dropdown";
+import DropdownButton from "react-bootstrap/DropdownButton";
 import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const { modal, setModal, options } = useContext(context);
   const [singleSelections, setSingleSelections] = useState([]);
   const typeaheadRef = useRef(null);
+  const [tab, setTab] = useState("");
+  const [show, setShow] = useState(false);
 
   const navigate = useNavigate();
+
+  const tabsClick = (t) => {
+    setTab(t);
+    setModal("tabs");
+  };
 
   useEffect(() => {
     if (singleSelections[0]) {
@@ -58,6 +68,15 @@ const Header = () => {
     },
   };
 
+  const customStylesTabs = {
+    overlay: { backgroundColor: "rgb(0,0,0,.9)" },
+    content: {
+      width: "95vw",
+      //height: "80vh",
+      padding: 0,
+    },
+  };
+
   return (
     <div className="header">
       <Navbar bg="dark" className="bg-body-dark" expand="lg">
@@ -71,18 +90,26 @@ const Header = () => {
           >
             <Nav className="me-auto">
               <div className="page-links">
-                <Link to="/main/1/1" className="page-btn">
+                {/* <Link to="/main/1/1" className="page-btn">
                   <FaPlay size={14} /> &nbsp;Page 1
                 </Link>
-                <Link to="/main/2/21" className="page-btn">
-                  <FaPlay size={14} /> &nbsp;Page 2
-                </Link>
-                <Link to="/main/3/41" className="page-btn">
-                  <FaPlay size={14} /> &nbsp;Page 3
-                </Link>
+                */}
                 <Link to="/main/0/0.1" className="strumming-btn">
                   STRUMMING
                 </Link>
+
+                <DropdownButton
+                  show={show}
+                  onMouseEnter={() => setShow(true)}
+                  onMouseLeave={() => setShow(false)}
+                  size="sm"
+                  variant="dark"
+                  title="Tabs"
+                >
+                  <Dropdown.Item onClick={() => tabsClick(got)}>
+                    GOT Theme
+                  </Dropdown.Item>
+                </DropdownButton>
               </div>
 
               <div className="search">
@@ -146,6 +173,16 @@ const Header = () => {
           contentLabel="Example Modal"
         >
           <img src={capo} style={{ width: "100%", height: "100%" }} alt="img" />
+        </Modal>
+      )}
+      {modal === "tabs" && (
+        <Modal
+          isOpen={modal === "tabs"}
+          onRequestClose={() => setModal(null)}
+          style={customStylesTabs}
+          contentLabel="Example Modal"
+        >
+          <img src={tab} style={{ width: "100%", height: "100%" }} alt="img" />
         </Modal>
       )}
     </div>
