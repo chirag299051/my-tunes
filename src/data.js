@@ -11,6 +11,15 @@ export const strumming = [
   {
     id: 0.2,
     title: "Strumming 2",
+    url: "https://www.youtube.com/watch?v=KRczCWWRxTI",
+    lyrics: "",
+    chords: [""],
+    strumming: "",
+    img: "https://i.ytimg.com/vi/KRczCWWRxTI/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCK5WtBP-1fk32DWYWsLuorsl9b_g",
+  },
+  {
+    id: 0.3,
+    title: "Strumming 3",
     url: "https://www.youtube.com/watch?v=Kz4oBTxh68A&t=95s",
     lyrics: "",
     chords: [""],
@@ -664,7 +673,7 @@ export const extras = [
     lyrics: "",
     chords: [""],
     strumming: "",
-    img: "https://i.ytimg.com/an_webp/hSBleQQY4qY/mqdefault_6s.webp?du=3000&sqp=CIT26swG&rs=AOn4CLB0PRO0F5lhiVnA-QeK1x75DjThSw",
+    img: "https://i.ytimg.com/vi/hSBleQQY4qY/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCGhCPjsn_-KDHZhC2YYLztkdCwew",
   },
   {
     id: 62,

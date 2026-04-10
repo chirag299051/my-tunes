@@ -100,7 +100,7 @@ const Player = () => {
             url={type === "main" ? song?.url : song?.lyrics}
             onEnded={() =>
               navigate(
-                `/${type}/${page}/${id < 1 ? Number(id) + 0.1 : Number(id) + 1 ? Number(id) + 1 : 1}`,
+                `/${type}/${page}/${id < 1 ? (Number(id) + 0.1).toFixed(1) : Number(id) + 1 ? Number(id) + 1 : 1}`,
               )
             }
           />
