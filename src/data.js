@@ -50,7 +50,7 @@ export const songs1 = [
   {
     id: 3,
     title: "Woh Lamhe",
-    url: "https://www.youtube.com/watch?v=_EvGL6TgdRY",
+    url: "https://www.youtube.com/watch?v=_EvGL6TgdRY&t=95s",
     lyrics: "https://www.youtube.com/watch?v=1DBhic8SSKs",
     chords: ["G#m F# E F#"],
     strumming: "D UUD UUD DU",
@@ -168,7 +168,7 @@ export const songs1 = [
   {
     id: 15,
     title: "Kabhi Jo Badal",
-    url: "https://www.youtube.com/watch?v=wzVHPqKiQuI",
+    url: "https://www.youtube.com/watch?v=wzVHPqKiQuI&t=50s",
     lyrics: "https://www.youtube.com/watch?v=11uuhJBllOQ",
     chords: ["Cm A# G# A#", "Cm Gm A#", "Fm A# G#"],
     strumming: "DD UUD DDU",
@@ -665,33 +665,33 @@ export const songs3 = [
 ];
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-export const extras = [
+export const lead = [
   {
     id: 61,
-    title: "3 Next level Finger Exercises",
-    url: "https://www.youtube.com/watch?v=hSBleQQY4qY&t=120s",
+    title: "Filhaal 2 - Lead",
+    url: "https://www.youtube.com/watch?v=jOuJWnsMDXM",
     lyrics: "",
     chords: [""],
     strumming: "",
-    img: "https://i.ytimg.com/vi/hSBleQQY4qY/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCGhCPjsn_-KDHZhC2YYLztkdCwew",
+    img: "https://i.ytimg.com/vi/jOuJWnsMDXM/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAI_uzGKf803W6tv7VakVivIzSXKw",
   },
   {
     id: 62,
-    title: "Major Scales",
-    url: "https://www.youtube.com/watch?v=iuWlJNswebA",
+    title: "Shayad - Lead",
+    url: "https://www.youtube.com/watch?v=3D4RHHsLK6M&t=149s",
     lyrics: "",
     chords: [""],
     strumming: "",
-    img: "https://i.ytimg.com/vi/iuWlJNswebA/hqdefault.jpg?sqp=-oaymwEpCPYBEIoBSFryq4qpAxsIARUAAIhCGAHYAQHiAQwIFhACGAYgATgBQAE=&rs=AOn4CLAl5FxHrTrIbTXgmnrAdIFoXVM6Iw",
+    img: "https://i.ytimg.com/vi/3D4RHHsLK6M/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCjzZt4D5cTDaXBZ-FJ2ftwn57aXA",
   },
   {
     id: 63,
-    title: "Minor Scales",
-    url: "https://www.youtube.com/watch?v=DnxrSf8STMU&t=141s",
+    title: "Aadat - Lead",
+    url: "https://www.youtube.com/watch?v=AqD56FWM7UQ",
     lyrics: "",
     chords: [""],
     strumming: "",
-    img: "https://i.ytimg.com/vi/DnxrSf8STMU/hqdefault.jpg?sqp=-oaymwEpCPYBEIoBSFryq4qpAxsIARUAAIhCGAHYAQHiAQwIFhACGAYgATgBQAE=&rs=AOn4CLDFWfYgtcNT5Y8V-Tfx_CwCVqFReQ",
+    img: "https://i.ytimg.com/vi/AqD56FWM7UQ/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAxIKECv5c7Yh7Upcj-mHfS14q1qA",
   },
   {
     id: 64,
@@ -720,26 +720,9 @@ export const extras = [
     strumming: "",
     img: "https://i.ytimg.com/vi/6g2gyTLh7TY/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBl4CyS5YT3_DqVPc1i0A2P4Q06lA",
   },
+
   {
     id: 67,
-    title: "Filhaal 2 - Lead",
-    url: "https://www.youtube.com/watch?v=jOuJWnsMDXM",
-    lyrics: "",
-    chords: [""],
-    strumming: "",
-    img: "https://i.ytimg.com/vi/jOuJWnsMDXM/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAI_uzGKf803W6tv7VakVivIzSXKw",
-  },
-  {
-    id: 68,
-    title: "Shayad - Lead",
-    url: "https://www.youtube.com/watch?v=3D4RHHsLK6M&t=149s",
-    lyrics: "",
-    chords: [""],
-    strumming: "",
-    img: "https://i.ytimg.com/vi/3D4RHHsLK6M/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCjzZt4D5cTDaXBZ-FJ2ftwn57aXA",
-  },
-  {
-    id: 69,
     title: "Raataan Lambiyan - Lead",
     url: "https://www.youtube.com/watch?v=Muu8zEOfav4",
     lyrics: "",
@@ -747,17 +730,38 @@ export const extras = [
     strumming: "",
     img: "https://i.ytimg.com/vi/Muu8zEOfav4/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAFi8Nzp1t3-24tsBVl3k1fDg-sHw",
   },
+];
+
+export const extras = [
   {
-    id: 70,
-    title: "Aadat - Lead",
-    url: "https://www.youtube.com/watch?v=AqD56FWM7UQ",
+    id: 101,
+    title: "3 Next level Finger Exercises",
+    url: "https://www.youtube.com/watch?v=hSBleQQY4qY&t=120s",
     lyrics: "",
     chords: [""],
     strumming: "",
-    img: "https://i.ytimg.com/vi/AqD56FWM7UQ/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAxIKECv5c7Yh7Upcj-mHfS14q1qA",
+    img: "https://i.ytimg.com/vi/hSBleQQY4qY/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCGhCPjsn_-KDHZhC2YYLztkdCwew",
   },
   {
-    id: 71,
+    id: 102,
+    title: "Major Scales",
+    url: "https://www.youtube.com/watch?v=iuWlJNswebA",
+    lyrics: "",
+    chords: [""],
+    strumming: "",
+    img: "https://i.ytimg.com/vi/iuWlJNswebA/hqdefault.jpg?sqp=-oaymwEpCPYBEIoBSFryq4qpAxsIARUAAIhCGAHYAQHiAQwIFhACGAYgATgBQAE=&rs=AOn4CLAl5FxHrTrIbTXgmnrAdIFoXVM6Iw",
+  },
+  {
+    id: 103,
+    title: "Minor Scales",
+    url: "https://www.youtube.com/watch?v=DnxrSf8STMU&t=141s",
+    lyrics: "",
+    chords: [""],
+    strumming: "",
+    img: "https://i.ytimg.com/vi/DnxrSf8STMU/hqdefault.jpg?sqp=-oaymwEpCPYBEIoBSFryq4qpAxsIARUAAIhCGAHYAQHiAQwIFhACGAYgATgBQAE=&rs=AOn4CLDFWfYgtcNT5Y8V-Tfx_CwCVqFReQ",
+  },
+  {
+    id: 104,
     title: "1 Common Fingerstyle Pattern",
     url: "https://www.youtube.com/watch?v=WEkLeV-GOxI",
     lyrics: "",
@@ -766,7 +770,7 @@ export const extras = [
     img: "https://i.ytimg.com/vi/WEkLeV-GOxI/hqdefault.jpg?sqp=-oaymwEpCPYBEIoBSFryq4qpAxsIARUAAIhCGAHYAQHiAQwIFhACGAYgATgBQAE=&rs=AOn4CLB1BZYmKFSqwZCvFbxYlEClRqpg_w",
   },
   {
-    id: 72,
+    id: 105,
     title: "Fingerstyle tutorial",
     url: "https://www.youtube.com/watch?v=rVPwdM_EEMM&t=3s",
     lyrics: "",
@@ -793,7 +797,7 @@ export const extras = [
   //   img: "https://i.ytimg.com/vi/MDu00TDO6AU/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBgFpMriW0ziDjPV-pu8HBY9eLxsg",
   // },
   {
-    id: 73,
+    id: 106,
     title: "Tum Hi Ho - Fingerstyle",
     url: "https://www.youtube.com/watch?v=2N0mflf2c0Q",
     lyrics: "",
@@ -802,7 +806,7 @@ export const extras = [
     img: "https://i.ytimg.com/vi/2N0mflf2c0Q/hqdefault.jpg?sqp=-oaymwEpCPYBEIoBSFryq4qpAxsIARUAAIhCGAHYAQHiAQwIFhACGAYgATgBQAE=&rs=AOn4CLCY6KEE-5nGDjNXRQ40PIhTUNuzUw",
   },
   {
-    id: 74,
+    id: 107,
     title: "Khamoshiyan - Fingerstyle",
     url: "https://www.youtube.com/watch?v=FjfNRsJF7Nc",
     lyrics: "",
@@ -811,16 +815,7 @@ export const extras = [
     img: "https://i.ytimg.com/vi/FjfNRsJF7Nc/hqdefault.jpg?sqp=-oaymwEpCPYBEIoBSFryq4qpAxsIARUAAIhCGAHYAQHiAQwIFhACGAYgATgBQAE=&rs=AOn4CLBAn7T4QKNRampZ1LwDVtSgx5br_g",
   },
   {
-    id: 75,
-    title: "Pirates of Carribbean - Theme",
-    url: "https://www.youtube.com/watch?v=-3euwoOoenM&t=80s",
-    lyrics: "",
-    chords: [""],
-    strumming: "",
-    img: "https://i.ytimg.com/vi/-3euwoOoenM/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAhUyid7G0ERoAbAUyZTT6BWE8nsg",
-  },
-  {
-    id: 76,
+    id: 108,
     title: "Aadat - Fingerstyle",
     url: "https://www.youtube.com/watch?v=jF5u33x3DHA",
     lyrics: "",
@@ -829,7 +824,7 @@ export const extras = [
     img: "https://i.ytimg.com/vi/jF5u33x3DHA/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC9qEVYiQW-iJux3FHa4xi9VJvToQ",
   },
   {
-    id: 77,
+    id: 109,
     title: "Gulabi Aankhein - Fingerstyle",
     url: "https://www.youtube.com/watch?v=-pcYxkitmkk&t=3s",
     lyrics: "",
@@ -838,7 +833,7 @@ export const extras = [
     img: "https://i.ytimg.com/vi/-pcYxkitmkk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCUB4WxTw5CyfESCAwdFONaC4k1Lw",
   },
   {
-    id: 78,
+    id: 110,
     title: "Amin Toofani - Veer Kumar",
     url: "https://www.youtube.com/watch?v=HG0BPP-aCq8",
     lyrics: "",
@@ -847,7 +842,17 @@ export const extras = [
     img: "https://i.ytimg.com/vi/HG0BPP-aCq8/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDHFs8G5Uqpei7M_6s2VInpN9orlQ",
   },
   {
-    id: 79,
+    id: 111,
+    title: "Pirates of Carribbean - Theme",
+    url: "https://www.youtube.com/watch?v=-3euwoOoenM&t=80s",
+    lyrics: "",
+    chords: [""],
+    strumming: "",
+    img: "https://i.ytimg.com/vi/-3euwoOoenM/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAhUyid7G0ERoAbAUyZTT6BWE8nsg",
+  },
+
+  {
+    id: 112,
     title: "Game of Thrones - Theme song",
     url: "https://www.youtube.com/watch?v=u_1fqr5OCMU&t=57s",
     lyrics: "",
@@ -856,7 +861,7 @@ export const extras = [
     img: "https://i.ytimg.com/vi/u_1fqr5OCMU/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLARv6FMNSLRDLRrkkRa6bWphmm7kQ",
   },
   {
-    id: 80,
+    id: 113,
     title: "Hogaya Hai Tujhko - Capo 4th",
     url: "https://www.youtube.com/watch?v=yN-NYans-wA",
     lyrics: "https://www.youtube.com/watch?v=M_bBw50pRII",
@@ -865,7 +870,7 @@ export const extras = [
     img: "https://i.ytimg.com/vi/yN-NYans-wA/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDEqc4NnA1pAXJz2Mqd8-QlVuQp2A",
   },
   {
-    id: 81,
+    id: 114,
     title: "O O Jane Jana",
     url: "https://www.youtube.com/watch?v=kV2SK6M9VOg",
     lyrics: "https://www.youtube.com/watch?v=JtAp4GnkMbE",
@@ -874,7 +879,7 @@ export const extras = [
     img: "https://i.ytimg.com/vi/kV2SK6M9VOg/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBDyjbbERHKYRwmHYVM_jqpGKvm5Q",
   },
   {
-    id: 82,
+    id: 115,
     title: "Filhaal - Capo 3rd",
     url: "https://www.youtube.com/watch?v=cEGGXdON28M&t=8s",
     lyrics: "https://www.youtube.com/watch?v=9Csrfj8QZN4",
@@ -883,7 +888,7 @@ export const extras = [
     img: "https://i.ytimg.com/vi/cEGGXdON28M/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD9M2Djknr5U138H84onDGIu5K0Vw",
   },
   {
-    id: 83,
+    id: 116,
     title: "Pani Da Rang",
     url: "https://www.youtube.com/watch?v=Qqm8xmgmlWc",
     lyrics: "https://www.youtube.com/watch?v=2kgEc6oH9J0",
@@ -892,7 +897,7 @@ export const extras = [
     img: "https://i.ytimg.com/vi/Qqm8xmgmlWc/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAfcmzL_18XC1GrLSi5Zra84yNS0w",
   },
   {
-    id: 84,
+    id: 117,
     title: "Mere Mehboob Qayamat Hogi",
     url: "https://www.youtube.com/watch?v=nTxQJSUH2FY",
     lyrics: "https://www.youtube.com/watch?v=K9YWU0GB_es",
@@ -901,7 +906,7 @@ export const extras = [
     img: "https://i.ytimg.com/vi/nTxQJSUH2FY/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCiQ9Wt9yMN0jCore4rWQok-7HDsQ",
   },
   {
-    id: 85,
+    id: 118,
     title: "Inteha Ho Gayi",
     url: "https://www.youtube.com/watch?v=1JbdMBNiw7I",
     lyrics: "https://www.youtube.com/watch?v=4muKrzVo7bU",
@@ -910,7 +915,7 @@ export const extras = [
     img: "https://i.ytimg.com/vi/1JbdMBNiw7I/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDn4-0qedGh3r-d96vKokCuSG1mXA",
   },
   {
-    id: 86,
+    id: 119,
     title: "Change Strings on Guitar",
     url: "https://www.youtube.com/watch?v=XQKfpoCWol4&t=2s",
     lyrics: "",

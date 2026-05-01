@@ -12,6 +12,10 @@ code {
     source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+.spacing {
+  margin-left: 100px;
+}
+
 .dropdown-menu {
   margin-top: 0 !important;
   background-color: #212529 !important; /* Bootstrap dark */
@@ -101,7 +105,12 @@ a.nav-link:focus {
   align-items: center;
 }
 
-.page-links .strumming-btn {
+.extra-links {
+  align-items: center;
+}
+
+.page-links .strumming-btn,
+.extra-links .strumming-btn {
   color: rgb(44, 184, 231);
   background-color: black;
   padding: 10px;
@@ -113,12 +122,13 @@ a.nav-link:focus {
   outline: none;
 }
 
-.page-links .strumming-btn:hover {
+.page-links .strumming-btn:hover,
+.extra-links .strumming-btn:hover {
   color: rgb(182, 0, 0);
 }
 
 .search input {
-  margin-right: 100px;
+  margin-right: 0px;
   width: 300px;
   border-radius: 50px;
   height: 30px;
@@ -386,6 +396,9 @@ a.nav-link:focus {
 }
 
 @media screen and (max-width: 1000px) {
+  .spacing {
+    margin-left: 0px;
+  }
   .tools {
     flex-direction: column;
     align-items: center;
@@ -422,6 +435,10 @@ a.nav-link:focus {
   }
 }
 @media screen and (max-width: 480px) {
+  .spacing {
+    margin-left: 0px;
+  }
+
   .player-wrapper {
     width: 100vw !important;
   }

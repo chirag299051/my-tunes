@@ -14,7 +14,7 @@ const Player = () => {
   const play = () => setPlaying(true);
   const navigate = useNavigate();
 
-  const { strumming, songs1, songs2, songs3, extras } = data;
+  const { strumming, songs1, songs2, songs3, lead, extras } = data;
   const { type, page, id } = useParams();
 
   useEffect(() => {
@@ -23,6 +23,7 @@ const Player = () => {
       ...songs1,
       ...songs2,
       ...songs3,
+      ...lead,
       ...extras,
     ].find((x) => x.id == id);
     setSong(song);
@@ -77,7 +78,9 @@ const Player = () => {
                       ? songs2
                       : page == 3
                         ? songs3
-                        : extras
+                        : page == 4
+                          ? lead
+                          : extras
             }
             type
           />
