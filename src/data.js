@@ -677,15 +677,6 @@ export const songs3 = [
 export const lead = [
   {
     id: 61,
-    title: "Tujhe Dekha - Lead",
-    url: "https://www.youtube.com/watch?v=IX_2eq9oar4",
-    lyrics: "",
-    chords: [""],
-    strumming: "",
-    img: "https://i.ytimg.com/vi/IX_2eq9oar4/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDLqMG6sC872Vo8aKEH1Q1SStTDjw",
-  },
-  {
-    id: 62,
     title: "Tum Hi Ho - Lead",
     url: "https://www.youtube.com/watch?v=u6uag0gW0x8",
     lyrics: "",
@@ -694,13 +685,22 @@ export const lead = [
     img: "https://i.ytimg.com/vi/u6uag0gW0x8/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCUuQPzMRKYiyLpc7CEGcVGgZj2mg",
   },
   {
-    id: 63,
+    id: 62,
     title: "Janam Janam - Lead",
     url: "https://www.youtube.com/watch?v=fXx99nqI1So",
     lyrics: "",
     chords: [""],
     strumming: "",
     img: "https://i.ytimg.com/vi/fXx99nqI1So/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAKBIE7ZE5pRWQF5K3UXvY8G5VOIw",
+  },
+  {
+    id: 63,
+    title: "Tujhe Dekha - Lead",
+    url: "https://www.youtube.com/watch?v=IX_2eq9oar4",
+    lyrics: "",
+    chords: [""],
+    strumming: "",
+    img: "https://i.ytimg.com/vi/IX_2eq9oar4/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDLqMG6sC872Vo8aKEH1Q1SStTDjw",
   },
   {
     id: 64,
