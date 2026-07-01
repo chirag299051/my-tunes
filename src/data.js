@@ -677,13 +677,14 @@ export const songs3 = [
 export const lead = [
   {
     id: 61,
-    title: "Tum Hi Ho - Lead",
-    url: "https://www.youtube.com/watch?v=u6uag0gW0x8",
+    title: "Aadat - Lead",
+    url: "https://www.youtube.com/watch?v=AqD56FWM7UQ",
     lyrics: "",
     chords: [""],
     strumming: "",
-    img: "https://i.ytimg.com/vi/u6uag0gW0x8/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCUuQPzMRKYiyLpc7CEGcVGgZj2mg",
+    img: "https://i.ytimg.com/vi/AqD56FWM7UQ/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAxIKECv5c7Yh7Upcj-mHfS14q1qA",
   },
+
   {
     id: 62,
     title: "Janam Janam - Lead",
@@ -695,6 +696,24 @@ export const lead = [
   },
   {
     id: 63,
+    title: "Tum Hi Ho - Lead",
+    url: "https://www.youtube.com/watch?v=u6uag0gW0x8",
+    lyrics: "",
+    chords: [""],
+    strumming: "",
+    img: "https://i.ytimg.com/vi/u6uag0gW0x8/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCUuQPzMRKYiyLpc7CEGcVGgZj2mg",
+  },
+  {
+    id: 64,
+    title: "Sun Raha Hai Na Tu - Lead",
+    url: "https://www.youtube.com/watch?v=QSuRvbsylnU",
+    lyrics: "",
+    chords: [""],
+    strumming: "",
+    img: "https://i.ytimg.com/vi/QSuRvbsylnU/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBWU1hlmIjXsGpXxz_nD1BUFnGFKw",
+  },
+  {
+    id: 65,
     title: "Tujhe Dekha - Lead",
     url: "https://www.youtube.com/watch?v=IX_2eq9oar4",
     lyrics: "",
@@ -703,7 +722,7 @@ export const lead = [
     img: "https://i.ytimg.com/vi/IX_2eq9oar4/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDLqMG6sC872Vo8aKEH1Q1SStTDjw",
   },
   {
-    id: 64,
+    id: 66,
     title: "Filhaal 2 - Lead",
     url: "https://www.youtube.com/watch?v=jOuJWnsMDXM",
     lyrics: "",
@@ -712,7 +731,7 @@ export const lead = [
     img: "https://i.ytimg.com/vi/jOuJWnsMDXM/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAI_uzGKf803W6tv7VakVivIzSXKw",
   },
   {
-    id: 65,
+    id: 67,
     title: "Shayad - Lead",
     url: "https://www.youtube.com/watch?v=3D4RHHsLK6M&t=149s",
     lyrics: "",
@@ -720,24 +739,7 @@ export const lead = [
     strumming: "",
     img: "https://i.ytimg.com/vi/3D4RHHsLK6M/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCjzZt4D5cTDaXBZ-FJ2ftwn57aXA",
   },
-  {
-    id: 66,
-    title: "Aadat - Lead",
-    url: "https://www.youtube.com/watch?v=AqD56FWM7UQ",
-    lyrics: "",
-    chords: [""],
-    strumming: "",
-    img: "https://i.ytimg.com/vi/AqD56FWM7UQ/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAxIKECv5c7Yh7Upcj-mHfS14q1qA",
-  },
-  {
-    id: 67,
-    title: "Sun Raha Hai Na Tu - Lead",
-    url: "https://www.youtube.com/watch?v=QSuRvbsylnU",
-    lyrics: "",
-    chords: [""],
-    strumming: "",
-    img: "https://i.ytimg.com/vi/QSuRvbsylnU/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBWU1hlmIjXsGpXxz_nD1BUFnGFKw",
-  },
+
   {
     id: 68,
     title: "Kabhi Jo Badal - Lead",
