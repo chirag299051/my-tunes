@@ -218,7 +218,7 @@ const Header = () => {
           <Container fluid className="header-container">
             {/* BRAND */}
 
-            <Link to="/my-tunes" className="brand">
+            <a href="/" className="brand">
               <span className="brand-icon">
                 <FaMusic />
               </span>
@@ -226,7 +226,7 @@ const Header = () => {
               <span className="brand-text">
                 my<span>Tunes</span>
               </span>
-            </Link>
+            </a>
 
             <Navbar.Toggle
               aria-controls="main-navigation"
