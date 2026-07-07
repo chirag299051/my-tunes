@@ -218,7 +218,7 @@ const Header = () => {
           <Container fluid className="header-container">
             {/* BRAND */}
 
-            <a href="/" className="brand">
+            <a href="/my-tunes" className="brand">
               <span className="brand-icon">
                 <FaMusic />
               </span>
