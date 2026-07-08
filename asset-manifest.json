@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/my-tunes/static/css/main.fe72cfb3.css",
-    "main.js": "/my-tunes/static/js/main.f0fa0dcd.js",
+    "main.css": "/my-tunes/static/css/main.1877ff69.css",
+    "main.js": "/my-tunes/static/js/main.fa89c15d.js",
     "reactPlayerPreview.js": "/my-tunes/static/js/reactPlayerPreview.1a0301a2.chunk.js",
-    "static/media/GOT Theme.jpg": "/my-tunes/static/media/GOT Theme.13b5f659434cee1d5916.jpg",
+    "static/media/insta.png": "/my-tunes/static/media/insta.baf13c02d74bc1382b59.png",
+    "static/media/yt.png": "/my-tunes/static/media/yt.0e906b410371d74c4677.png",
     "static/media/capo.png": "/my-tunes/static/media/capo.54b4454e1ae8332d867e.png",
+    "static/media/fb.png": "/my-tunes/static/media/fb.bc48a00d40144d03d7ce.png",
+    "static/media/linkedin.png": "/my-tunes/static/media/linkedin.0e42909af4347dfe2441.png",
     "static/media/menu.svg": "/my-tunes/static/media/menu.cd4589e9cb256d684925.svg",
     "index.html": "/my-tunes/index.html",
-    "main.fe72cfb3.css.map": "/my-tunes/static/css/main.fe72cfb3.css.map",
-    "main.f0fa0dcd.js.map": "/my-tunes/static/js/main.f0fa0dcd.js.map",
+    "main.1877ff69.css.map": "/my-tunes/static/css/main.1877ff69.css.map",
+    "main.fa89c15d.js.map": "/my-tunes/static/js/main.fa89c15d.js.map",
     "reactPlayerPreview.1a0301a2.chunk.js.map": "/my-tunes/static/js/reactPlayerPreview.1a0301a2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe72cfb3.css",
-    "static/js/main.f0fa0dcd.js"
+    "static/css/main.1877ff69.css",
+    "static/js/main.fa89c15d.js"
   ]
 }
