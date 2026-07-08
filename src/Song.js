@@ -1,20 +1,18 @@
 import React from "react";
 import { FaYoutube } from "react-icons/fa";
 import Chords from "./Chords";
+import Strum from "./Strum";
 import ScrollIntoView from "react-scroll-into-view";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-
+import { Link, useNavigate } from "react-router-dom";
 const Song = ({ song }) => {
   const { id, title, lyrics, chords, strumming } = song;
   const navigate = useNavigate();
   const page = id < 21 ? 1 : id < 41 ? 2 : id < 61 ? 3 : 4;
-
   return (
     <ScrollIntoView className="song" selector=".active">
       <Link to={`/main/${page}/${id}`}>
-        <span className="span center">{id}.</span>
-        <span className="span">
+        <span className="span center song-number">{id}.</span>
+        <span className="span song-title">
           <i>{title}</i>
         </span>
         {lyrics && (
@@ -35,10 +33,9 @@ const Song = ({ song }) => {
               <Chords key={`${id}-${chord}-${index}`} chords={chord} />
             ))}
         </span>
-        <span className="span">{strumming}</span>
+        <Strum strumming={strumming} />
       </Link>
     </ScrollIntoView>
   );
 };
-
 export default Song;

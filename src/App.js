@@ -58,7 +58,7 @@ function App() {
     >
       <Header />
 
-      <SideMenu />
+      {/* <SideMenu /> */}
 
       <Routes />
     </context.Provider>
