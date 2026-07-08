@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./Header";
 import SideMenu from "./SideMenu";
 import Footer from "./Footer";
+import SupportModal from "./SupportModal";
 import Main from "./Main";
 import { strumming, songs1, songs2, songs3, lead, extras } from "./data";
 import { createContext, useState } from "react";
@@ -38,10 +39,8 @@ function App() {
   });
 
   const [isShuffle, setIsShuffle] = useState(false);
-
   const [activePage, setActivePage] = useState(1);
-
-  const support = () => {};
+  const [showSupportModal, setShowSupportModal] = useState(false);
 
   return (
     <context.Provider
@@ -53,14 +52,17 @@ function App() {
         setIsShuffle,
         activePage,
         setActivePage,
-        support,
+        setShowSupportModal,
       }}
     >
       <Header />
-
       {/* <SideMenu /> */}
-
       <Routes />
+      <Footer />
+      <SupportModal
+        isOpen={showSupportModal}
+        onClose={() => setShowSupportModal(false)}
+      />
     </context.Provider>
   );
 }

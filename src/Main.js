@@ -1,39 +1,12 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import Page from "./Page";
 import Tools from "./Tools";
-import Footer from "./Footer";
 import { context } from "./App";
-
 const Main = () => {
-  const { data, isShuffle, shuffled, activePage, support } =
+  const { data, isShuffle, shuffled, setShowSupportModal } =
     useContext(context);
   const { songs1, songs2, songs3 } = data;
-
-  const [displayPage, setDisplayPage] = useState(activePage);
-  const [pageTransition, setPageTransition] = useState("page-enter");
-
-  const pages = {
-    1: songs1,
-    2: songs2,
-    3: songs3,
-  };
-
-  useEffect(() => {
-    if (activePage === displayPage) return;
-
-    setPageTransition("page-exit");
-
-    const timeout = setTimeout(() => {
-      setDisplayPage(activePage);
-      setPageTransition("page-enter");
-    }, 50);
-
-    return () => clearTimeout(timeout);
-  }, [activePage, displayPage]);
-
-  const currentSongs =
-    displayPage === 1 && isShuffle ? shuffled : pages[displayPage];
-
+  const page1Songs = isShuffle ? shuffled : songs1;
   return (
     <div>
       <section className="main">
@@ -42,26 +15,27 @@ const Main = () => {
             <div className="title-info">
               Your Guitar Learning Journey Starts Here
             </div>
-            <button type="button" className="support" onClick={support}>
+            <button
+              type="button"
+              className="support"
+              onClick={() => setShowSupportModal(true)}
+            >
               Support This Project
             </button>
           </div>
-
-          <div className={`page-transition ${pageTransition}`}>
-            <Page
-              songs={currentSongs}
-              isShuffle={displayPage === 1 && isShuffle}
-              page={displayPage}
-            />
+          <div id="page-1">
+            <Page songs={page1Songs} isShuffle={isShuffle} page={1} />
+          </div>
+          <div id="page-2">
+            <Page songs={songs2} isShuffle={false} page={2} />
+          </div>
+          <div id="page-3">
+            <Page songs={songs3} isShuffle={false} page={3} />
           </div>
         </div>
       </section>
-
       <Tools />
-
-      <Footer />
     </div>
   );
 };
-
 export default Main;

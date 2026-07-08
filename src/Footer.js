@@ -5,7 +5,7 @@ import yt from "./assets/yt.png";
 import linkedin from "./assets/linkedin.png";
 import { context } from "./App";
 const Footer = () => {
-  const { support } = useContext(context);
+  const { setShowSupportModal } = useContext(context);
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -53,11 +53,12 @@ const Footer = () => {
             className="footer-price-cta"
             onClick={scrollToContact}
           >
-            <span className="footer-price-cta-text">Get Started with</span>
+            <span className="footer-price-cta-text">Get Started</span>
+            {/* <span className="footer-price-cta-text">Get Started with</span>
             <span className="footer-price">
               ₹500
               <span>/month</span>
-            </span>
+            </span> */}
           </button>
         </section>
         <section id="contact-form" className="footer-section footer-contact">
@@ -111,7 +112,7 @@ const Footer = () => {
               <button
                 type="button"
                 className="support footer-support-btn"
-                onClick={support}
+                onClick={() => setShowSupportModal(true)}
               >
                 Support This Project
               </button>
