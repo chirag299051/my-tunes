@@ -6,7 +6,6 @@ const Main = () => {
   const { data, isShuffle, shuffled, setShowSupportModal } =
     useContext(context);
   const { songs1, songs2, songs3 } = data;
-  const page1Songs = isShuffle ? shuffled : songs1;
   return (
     <div>
       <section className="main">
@@ -24,13 +23,16 @@ const Main = () => {
             </button>
           </div>
           <div id="page-1">
-            <Page songs={page1Songs} isShuffle={isShuffle} page={1} />
+            <div className="page-indicator">Page 1</div>
+            <Page songs={songs1} />
           </div>
           <div id="page-2">
-            <Page songs={songs2} isShuffle={false} page={2} />
+            <div className="page-indicator">Page 2</div>
+            <Page songs={songs2} />
           </div>
           <div id="page-3">
-            <Page songs={songs3} isShuffle={false} page={3} />
+            <div className="page-indicator">Page 3</div>
+            <Page songs={songs3} />
           </div>
         </div>
       </section>

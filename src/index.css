@@ -520,7 +520,7 @@ code {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  margin: 0 auto 12px;
+  margin: 0 auto 0px;
   padding: 0 12px;
 }
 .title-info {
@@ -579,6 +579,31 @@ code {
     #0a0a0a;
   transform: translateY(-1px);
 }
+.page-indicator {
+  width: fit-content;
+  min-height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 16px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  border: 1px solid rgba(108, 216, 255, 0.4);
+  border-radius: 12px 12px 0 0;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(95, 204, 255, 0.18),
+      rgba(255, 255, 255, 0.045)
+    ),
+    rgba(17, 17, 17, 0.92);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.13),
+    0 0 22px rgba(100, 215, 255, 0.1);
+}
 /* =========================================================
    PAGE
    ========================================================= */
@@ -596,7 +621,7 @@ code {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: stretch;
   gap: 0;
-  margin: 25px 40px 150px;
+  margin: 0px 40px 150px;
   padding: 12px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.07);
@@ -3058,6 +3083,10 @@ code {
 @media screen and (max-width: 650px) {
   .header-widget-zone {
     display: none !important;
+  }
+  .page-indicator {
+    margin-left: 16px;
+    margin-right: 0;
   }
   .song {
     min-height: 100px;
