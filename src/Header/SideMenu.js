@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { FaGuitar, FaTools, FaEnvelope } from "react-icons/fa";
 import { useLocation, useNavigate } from "react-router-dom";
-import { context } from "./App";
+import { context } from "../App";
 
 const SideMenu = () => {
   const { activePage, setActivePage } = useContext(context);

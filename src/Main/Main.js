@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Page from "./Page";
 import Tools from "./Tools";
-import { context } from "./App";
+import { context } from "../App";
 const Main = () => {
   const { data, isShuffle, shuffled, setShowSupportModal } =
     useContext(context);

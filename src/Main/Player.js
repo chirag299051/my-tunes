@@ -1,6 +1,6 @@
 import React, { useContext, useRef, useEffect, useState } from "react";
 import ReactPlayer from "react-player/youtube";
-import { context } from "./App";
+import { context } from "../App";
 import Song from "./Song";
 import Playlist from "./Playlist";
 import { Link, useNavigate, useParams } from "react-router-dom";

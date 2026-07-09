@@ -1,15 +1,15 @@
 import "./App.css";
-import Header from "./Header";
-import SideMenu from "./SideMenu";
-import Footer from "./Footer";
-import SupportModal from "./SupportModal";
-import Main from "./Main";
+import Header from "./Header/Header";
+import SideMenu from "./Header/SideMenu";
+import Footer from "./Footer/Footer";
+import SupportModal from "./Main/SupportModal";
+import Main from "./Main/Main";
 import { strumming, songs1, songs2, songs3, lead, extras } from "./data";
 import { createContext, useState } from "react";
 import arrayShuffle from "array-shuffle";
 import "react-bootstrap-typeahead/css/Typeahead.css";
 import { Routes as Router, Route } from "react-router-dom";
-import Player from "./Player";
+import Player from "./Main/Player";
 
 const Routes = () => {
   return (

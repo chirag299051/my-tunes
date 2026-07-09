@@ -3055,3 +3055,18 @@ code {
     width: 190px;
   }
 }
+@media screen and (max-width: 650px) {
+  .header-widget-zone {
+    display: none !important;
+  }
+  .song {
+    min-height: 130px;
+    max-height: 130px;
+  }
+  .song a {
+    min-height: 130px;
+  }
+  .chords-wrapper {
+    max-height: 130px;
+  }
+}

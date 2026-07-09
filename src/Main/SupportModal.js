@@ -1,7 +1,7 @@
 import React from "react";
 import Modal from "react-modal";
 import { FaPaypal, FaTimes } from "react-icons/fa";
-import supportQr from "./assets/support-qr.png";
+import supportQr from "../assets/support-qr.png";
 const SupportModal = ({ isOpen, onClose }) => {
   return (
     <Modal

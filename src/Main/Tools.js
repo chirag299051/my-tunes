@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import { FaMusic } from "react-icons/fa";
-import capo from "./assets/capo.png";
+import capo from "../assets/capo.png";
 
 const Tools = () => {
   const [showCapoChart, setShowCapoChart] = useState(false);

@@ -5,13 +5,17 @@ import NavBootstrap from "react-bootstrap/Nav";
 import { Typeahead } from "react-bootstrap-typeahead";
 import { FaPlay, FaMusic, FaSearch } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
-import { context } from "./App";
+import { context } from "../App";
 import Nav from "./Nav";
 const Header = () => {
   const { options } = useContext(context);
   const [singleSelections, setSingleSelections] = useState([]);
+  const [expanded, setExpanded] = useState(false);
   const typeaheadRef = useRef(null);
   const navigate = useNavigate();
+  const closeNavbar = () => {
+    setExpanded(false);
+  };
   useEffect(() => {
     if (!singleSelections[0]) return;
     const id = singleSelections[0].id;
@@ -20,6 +24,7 @@ const Header = () => {
     navigate(`/main/${page}/${id}`);
     typeaheadRef.current?.blur();
     setSingleSelections([]);
+    closeNavbar();
   }, [singleSelections, navigate]);
   const songs = options.map((song) => ({
     id: song.id,
@@ -27,9 +32,14 @@ const Header = () => {
   }));
   return (
     <header className="site-header">
-      <Navbar expand="lg" className="glass-navbar">
+      <Navbar
+        expand="lg"
+        expanded={expanded}
+        onToggle={setExpanded}
+        className="glass-navbar"
+      >
         <Container fluid className="header-container">
-          <a href="/my-tunes" className="brand">
+          <a href="/my-tunes" className="brand" onClick={closeNavbar}>
             <span className="brand-icon">
               <FaMusic />
             </span>
@@ -44,13 +54,25 @@ const Header = () => {
           <Navbar.Collapse id="main-navigation">
             <NavBootstrap className="header-navigation">
               <div className="header-nav-group">
-                <Link to="/main/0/0.1" className="glass-nav-link">
+                <Link
+                  to="/main/0/0.1"
+                  className="glass-nav-link"
+                  onClick={closeNavbar}
+                >
                   Strumming
                 </Link>
-                <Link to="/main/4/61" className="glass-nav-link">
+                <Link
+                  to="/main/4/61"
+                  className="glass-nav-link"
+                  onClick={closeNavbar}
+                >
                   Lead
                 </Link>
-                <Link to="/main/5/101" className="glass-nav-link extras-link">
+                <Link
+                  to="/main/5/101"
+                  className="glass-nav-link extras-link"
+                  onClick={closeNavbar}
+                >
                   <FaPlay className="play-icon" />
                   Extras
                 </Link>
