@@ -3060,17 +3060,17 @@ code {
     display: none !important;
   }
   .song {
-    min-height: 260px;
+    min-height: 130px;
     max-height: none;
   }
   .song a {
-    min-height: 260px;
+    min-height: 130px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 12px;
-    padding: 14px 10px;
+    gap: 4px;
+    padding: 2px 2px;
   }
   .song a > .song-title {
     width: 100%;
