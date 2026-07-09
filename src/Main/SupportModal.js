@@ -28,14 +28,15 @@ const SupportModal = ({ isOpen, onClose }) => {
           UPI or PayPal.
         </p>
         <div className="support-qr-card">
+          <div className="support-upi-id">chirag1509@ptaxis</div>
           <img src={supportQr} alt="Paytm and Google Pay UPI QR code" />
           <strong>Scan to Pay with UPI</strong>
           <span>Paytm · Google Pay · Any UPI App</span>
         </div>
         <a
           className="support-paypal-button"
-          href="YOUR_PAYPAL_LINK"
-          target="_blank"
+          href="/"
+          // target="_blank"
           rel="noreferrer"
         >
           <FaPaypal />

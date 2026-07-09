@@ -8,7 +8,7 @@ const PlaylistItem = forwardRef((props, ref) => {
 
   return (
     <Link className={classes} to={`/${type}/${page}/${currId}`}>
-      <p>{currId}.</p>
+      <p className="id">{currId}.</p>
       <img src={img} alt="" />
       <p>{title}</p>
     </Link>

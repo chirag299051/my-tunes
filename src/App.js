@@ -58,7 +58,7 @@ function App() {
       <Header />
       {/* <SideMenu /> */}
       <Routes />
-      <Footer />
+
       <SupportModal
         isOpen={showSupportModal}
         onClose={() => setShowSupportModal(false)}

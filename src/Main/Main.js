@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import Page from "./Page";
 import Tools from "./Tools";
+import Footer from "../Footer/Footer";
 import { context } from "../App";
 const Main = () => {
-  const { data, isShuffle, shuffled, setShowSupportModal } =
-    useContext(context);
+  const { data, setShowSupportModal } = useContext(context);
   const { songs1, songs2, songs3 } = data;
   return (
     <div>
@@ -37,6 +37,7 @@ const Main = () => {
         </div>
       </section>
       <Tools />
+      <Footer />
     </div>
   );
 };
