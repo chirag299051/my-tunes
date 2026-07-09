@@ -3060,11 +3060,11 @@ code {
     display: none !important;
   }
   .song {
-    min-height: 130px;
+    min-height: 100px;
     max-height: none;
   }
   .song a {
-    min-height: 130px;
+    min-height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -3077,8 +3077,8 @@ code {
     justify-content: center;
     text-align: center;
   }
-  .song a > .btn-link {
-    flex-shrink: 0;
+  .lyrics {
+    display: none !important;
   }
   .song a > .chords-wrapper {
     width: 100%;
@@ -3092,7 +3092,7 @@ code {
     width: fit-content;
     max-width: 100%;
     flex-shrink: 0;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
   }
   .footer-lessons {
     display: none;

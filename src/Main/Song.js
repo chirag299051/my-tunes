@@ -17,7 +17,7 @@ const Song = ({ song }) => {
         </span>
         {lyrics && (
           <button
-            className="btn btn-link px-0"
+            className="btn btn-link px-0 lyrics"
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();
