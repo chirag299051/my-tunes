@@ -22,7 +22,8 @@ const Routes = () => {
 
 export const context = createContext();
 
-const options = [...songs1, ...songs2, ...songs3];
+const extraOptions = extras.filter((x) => x.id >= 111 && x.id <= 118);
+const options = [...songs1, ...songs2, ...songs3, ...extraOptions];
 
 const shuffled = arrayShuffle(options)
   .slice(0, 20)
