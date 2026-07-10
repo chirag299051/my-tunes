@@ -89,6 +89,7 @@ const Player = () => {
                 playerVars: {
                   autoplay: 1,
                   controls: 1,
+                  cc_load_policy: 0,
                 },
               },
             }}

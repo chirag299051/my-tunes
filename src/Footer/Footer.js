@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-
+import emailjs from "@emailjs/browser";
 import { context } from "../App";
 import { Social } from "./Social";
 const Footer = () => {
@@ -9,16 +9,63 @@ const Footer = () => {
     phone: "",
     message: "",
   });
+  const [isSending, setIsSending] = useState(false);
+  const [status, setStatus] = useState({
+    type: "",
+    message: "",
+  });
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData((current) => ({
       ...current,
       [name]: value,
     }));
+    if (status.message) {
+      setStatus({
+        type: "",
+        message: "",
+      });
+    }
   };
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log(formData);
+    if (isSending) return;
+    setIsSending(true);
+    setStatus({
+      type: "",
+      message: "",
+    });
+    try {
+      await emailjs.send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        {
+          name: formData.name,
+          phone: formData.phone,
+          message: formData.message || "No message provided",
+        },
+        {
+          publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
+        },
+      );
+      setStatus({
+        type: "success",
+        message: "Thanks! I'll get in touch with you soon.",
+      });
+      setFormData({
+        name: "",
+        phone: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      setStatus({
+        type: "error",
+        message: "Could not send your message. Please try again.",
+      });
+    } finally {
+      setIsSending(false);
+    }
   };
   const scrollToContact = () => {
     const contactForm = document.getElementById("contact-form");
@@ -52,11 +99,6 @@ const Footer = () => {
             onClick={scrollToContact}
           >
             <span className="footer-price-cta-text">Get Started</span>
-            {/* <span className="footer-price-cta-text">Get Started with</span>
-            <span className="footer-price">
-              ₹500
-              <span>/month</span>
-            </span> */}
           </button>
         </section>
         <section id="contact-form" className="footer-section footer-contact">
@@ -104,8 +146,12 @@ const Footer = () => {
               />
             </div>
             <div className="footer-form-actions">
-              <button type="submit" className="footer-submit-btn">
-                Contact Me
+              <button
+                type="submit"
+                className="footer-submit-btn"
+                disabled={isSending}
+              >
+                {isSending ? "Sending..." : "Contact Me"}
               </button>
               <button
                 type="button"
@@ -115,6 +161,14 @@ const Footer = () => {
                 Support This Project
               </button>
             </div>
+            {status.message && (
+              <p
+                className={`footer-contact-status footer-contact-status-${status.type}`}
+                role="status"
+              >
+                {status.message}
+              </p>
+            )}
           </form>
         </section>
       </div>
