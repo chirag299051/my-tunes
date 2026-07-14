@@ -1252,16 +1252,120 @@ code {
   background: rgba(100, 215, 255, 0.07);
 }
 /* =========================================================
-   CAPO MODAL
+   TOOLS MODAL
    ========================================================= */
-.tools-capo-modal-image {
+.tools-fretboard-modal-image {
   display: block;
-  width: auto;
+  width: 100%;
   height: auto;
-  max-width: calc(90vw - 24px);
   max-height: calc(90vh - 24px);
   object-fit: contain;
   border-radius: 14px;
+}
+.tools-capo-modal-image {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: calc(100vh - 48px);
+  margin: 0 auto;
+  object-fit: contain;
+  border-radius: 14px;
+}
+@media screen and (max-width: 520px) {
+  .tools-capo-modal-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: none;
+  }
+}
+.tools-chart-buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 2px;
+}
+.tools-chart-button {
+  min-width: 210px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 18px;
+  color: rgba(225, 242, 250, 0.78);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 650;
+  cursor: pointer;
+  border: 1px solid rgba(100, 215, 255, 0.13);
+  border-radius: 12px;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(100, 215, 255, 0.065),
+      rgba(255, 255, 255, 0.015)
+    ),
+    rgba(5, 9, 12, 0.78);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.045),
+    0 7px 22px rgba(0, 0, 0, 0.2);
+  transition:
+    color 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease,
+    transform 160ms ease,
+    box-shadow 160ms ease;
+}
+.tools-chart-button:hover {
+  color: #fff;
+  border-color: rgba(100, 215, 255, 0.32);
+  background:
+    linear-gradient(
+      135deg,
+      rgba(100, 215, 255, 0.12),
+      rgba(255, 255, 255, 0.025)
+    ),
+    rgba(7, 13, 17, 0.9);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.07),
+    0 10px 28px rgba(0, 0, 0, 0.28),
+    0 0 20px rgba(100, 215, 255, 0.04);
+  transform: translateY(-1px);
+}
+.tools-chart-button:active {
+  transform: translateY(0);
+}
+.tools-chart-button-icon {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #70d9ff;
+  font-size: 12px;
+  border: 1px solid rgba(120, 218, 255, 0.14);
+  border-radius: 8px;
+  background: rgba(74, 202, 255, 0.08);
+}
+@media screen and (max-width: 520px) {
+  .tools-chart-buttons {
+    gap: 8px;
+  }
+  .tools-chart-button {
+    flex: 1;
+    min-width: 0;
+    height: 46px;
+    padding: 0 10px;
+    font-size: 11px;
+  }
+  .tools-chart-button-icon {
+    display: none;
+  }
 }
 /* =========================================================
    RESPONSIVE
