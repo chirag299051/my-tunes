@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-tunes/static/css/main.9dd182ec.css",
-    "main.js": "/my-tunes/static/js/main.e16665cd.js",
+    "main.css": "/my-tunes/static/css/main.239779d6.css",
+    "main.js": "/my-tunes/static/js/main.28fff71b.js",
     "reactPlayerPreview.js": "/my-tunes/static/js/reactPlayerPreview.1a0301a2.chunk.js",
     "static/media/fretboard.png": "/my-tunes/static/media/fretboard.96e3efaca28e1c01559b.png",
     "static/media/insta.png": "/my-tunes/static/media/insta.baf13c02d74bc1382b59.png",
@@ -12,12 +12,12 @@
     "static/media/support-qr.png": "/my-tunes/static/media/support-qr.585c223aa34352b0d5ca.png",
     "static/media/menu.svg": "/my-tunes/static/media/menu.cd4589e9cb256d684925.svg",
     "index.html": "/my-tunes/index.html",
-    "main.9dd182ec.css.map": "/my-tunes/static/css/main.9dd182ec.css.map",
-    "main.e16665cd.js.map": "/my-tunes/static/js/main.e16665cd.js.map",
+    "main.239779d6.css.map": "/my-tunes/static/css/main.239779d6.css.map",
+    "main.28fff71b.js.map": "/my-tunes/static/js/main.28fff71b.js.map",
     "reactPlayerPreview.1a0301a2.chunk.js.map": "/my-tunes/static/js/reactPlayerPreview.1a0301a2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9dd182ec.css",
-    "static/js/main.e16665cd.js"
+    "static/css/main.239779d6.css",
+    "static/js/main.28fff71b.js"
   ]
 }
