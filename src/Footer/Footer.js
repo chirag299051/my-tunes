@@ -83,7 +83,7 @@ const Footer = () => {
   return (
     <footer id="contact-section" className="footer">
       <div className="footer-content">
-        <section className="footer-section footer-lessons">
+        {/* <section className="footer-section footer-lessons">
           <h2>Beginner Guitar Lessons</h2>
           <ul className="footer-lessons-list">
             <li>Zero to Hero Guitarist</li>
@@ -170,7 +170,7 @@ const Footer = () => {
               </p>
             )}
           </form>
-        </section>
+        </section> */}
       </div>
       <Social />
       <div className="footer-copyright">

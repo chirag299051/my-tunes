@@ -1641,8 +1641,10 @@ code {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 0;
-  margin: 70px auto 200px;
-  padding: 64px 0 54px;
+  /* margin: 70px auto 200px; */
+  /* padding: 64px 0 54px; */
+  margin: 50px auto 50px;
+  padding: 40px 0 40px;
 }
 .footer-section {
   position: relative;
