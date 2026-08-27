@@ -168,12 +168,21 @@ export const songs1 = [
   {
     id: 15,
     title: "Kabhi Jo Badal",
-    url: "https://www.youtube.com/watch?v=wzVHPqKiQuI&t=50s",
+    url: "https://www.youtube.com/watch?v=FJ61UFSUR8w&t=66s",
     lyrics: "https://www.youtube.com/watch?v=11uuhJBllOQ",
     chords: ["Cm A# G# A#", "Cm Gm A#", "Fm A# G#"],
     strumming: "DD UUD DDU",
-    img: "https://i.ytimg.com/vi/wzVHPqKiQuI/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD2GcMSVlpwqxFy5F6hDh3IZsPHQQ",
+    img: "https://i.ytimg.com/vi/FJ61UFSUR8w/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDW5d39NmYbk4uVgRJ_HHjGR1YleQ",
   },
+  // {
+  //   id: 15,
+  //   title: "Kabhi Jo Badal",
+  //   url: "https://www.youtube.com/watch?v=wzVHPqKiQuI&t=50s",
+  //   lyrics: "https://www.youtube.com/watch?v=11uuhJBllOQ",
+  //   chords: ["Cm A# G# A#", "Cm Gm A#", "Fm A# G#"],
+  //   strumming: "DD UUD DDU",
+  //   img: "https://i.ytimg.com/vi/wzVHPqKiQuI/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD2GcMSVlpwqxFy5F6hDh3IZsPHQQ",
+  // },
   {
     id: 16,
     title: "Give Me Some Sunshine",

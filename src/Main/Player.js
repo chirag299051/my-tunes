@@ -38,11 +38,14 @@ const Player = () => {
     play();
     const handleKeyPress = (event) => {
       if (playerRef.current) {
-        if (event.keyCode === 37) {
+        if (event.key === "ArrowLeft") {
+          event.preventDefault();
           playerRef.current.seekTo(playerRef.current.getCurrentTime() - 5);
-        } else if (event.keyCode === 39) {
+        } else if (event.key === "ArrowRight") {
+          event.preventDefault();
           playerRef.current.seekTo(playerRef.current.getCurrentTime() + 5);
-        } else if (event.keyCode === 32 || event.keyCode === 49) {
+        } else if (event.code === "Space" || event.keyCode === 49) {
+          event.preventDefault();
           setPlaying((currentPlaying) => !currentPlaying);
         }
       }
